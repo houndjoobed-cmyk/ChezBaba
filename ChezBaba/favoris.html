@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Favoris - ChezBaba</title>
     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
         :root {
@@ -18,7 +20,7 @@
             --slategray: #404E4D;
             --green: #758e4f;
             --white: #ffffff;
-            --orange: #EA9010; 
+            --orange: #EA9010;
             --pink: #FD6C9E;
             --teal: #17a2b8;
             --alibaba-orange: #ff6900;
@@ -122,7 +124,7 @@
             padding: 20px;
             background: var(--white);
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         .filters-section {
@@ -212,7 +214,7 @@
         .favorites-container {
             background: var(--white);
             border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             padding: 30px;
             min-height: 400px;
         }
@@ -234,7 +236,7 @@
 
         .favorite-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
             border-color: var(--blue);
         }
 
@@ -442,14 +444,14 @@
             background: var(--white);
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             cursor: pointer;
         }
 
         .product-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         }
 
         .product-image {
@@ -476,7 +478,7 @@
             color: var(--blue);
         }
 
-        
+
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) {
             .favorites-grid {
@@ -489,23 +491,26 @@
             .navigation {
                 display: none;
             }
-            .navBar_connexion_inscription{
+
+            .navBar_connexion_inscription {
                 display: none;
             }
+
             .categorie_navigation {
                 display: none;
             }
-            .logo-icone-mobile{
+
+            .logo-icone-mobile {
                 display: flex;
                 flex-direction: row;
                 padding: 2px 0 2px 0;
                 gap: 15px;
                 justify-content: end;
-                padding-right: 10px;  
+                padding-right: 10px;
                 width: 100%;
             }
-            
-            .mobile-logo{
+
+            .mobile-logo {
                 text-decoration: none;
                 color: var(--slategray);
                 font-size: 24px;
@@ -514,25 +519,30 @@
                 transition: all 0.3s ease;
                 width: 70%;
             }
-            .nav-mobile-logo{
+
+            .nav-mobile-logo {
                 padding-right: 120px;
             }
-            .mobile-icone{
+
+            .mobile-icone {
                 width: 30%;
             }
-            .icone i{
+
+            .icone i {
                 font-size: 1.5em;
                 color: var(--black);
             }
-            .icone a:hover i{
+
+            .icone a:hover i {
                 color: var(--blue);
                 transform: translateY(-2px);
             }
+
             .button_icons {
                 display: none;
             }
-          
-            .logo_link{
+
+            .logo_link {
                 display: none;
             }
 
@@ -684,16 +694,19 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Loader -->
-    <div id="pageLoader"><div class="spinner"></div></div>
+    <div id="pageLoader">
+        <div class="spinner"></div>
+    </div>
     <!-- NAVIGATION -->
- <nav>
+    <nav>
         <div class="navBar">
             <div class="navBar_connexion_inscription">
-                <p class="navBar_connexion_inscrption_text" >
+                <p class="navBar_connexion_inscrption_text">
                     Bonjour!
-                    <a href="#" class="connexion_link" id="loginBtn">Connecter vous</a> ou 
+                    <a href="#" class="connexion_link" id="loginBtn">Connecter vous</a> ou
                     <a href="#" class="inscription_link" id="registerBtn">Inscrivez-vous</a>
                     <a href="#" class="aide_link">Aide</a>
                 </p>
@@ -702,19 +715,20 @@
                 <div class="nav-mobile-logo">
                     <a href="index.html" class="mobile-logo" aria-label="Accueil ChezBaba">
                         <img src="img/logo-removebg-preview.png" alt="ChezBaba Logo" class="mobile-logo-image">
-                     </a>
+                    </a>
                 </div>
                 <div class="mobile-icone">
                     <!-- <a href="favoris.html" class="icone"><i class="bi bi-heart"></i></a> -->
-                    <a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge" id="cartCount">0</span></a>               
+                    <a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span
+                            class="cart-badge" id="cartCount">0</span></a>
                     <a href="profil.html" class="icone"><i class="bi bi-person"></i></a>
                 </div>
             </div>
             <div class="logo_searchBar_button">
                 <div class="nav_logo">
-                        <a href="index.html" class="logo_link" aria-label="Accueil ChezBaba">
-                            <img src="img/logo-removebg-preview.png" alt="ChezBaba Logo" class="logo-image">
-                        </a>
+                    <a href="index.html" class="logo_link" aria-label="Accueil ChezBaba">
+                        <img src="img/logo-removebg-preview.png" alt="ChezBaba Logo" class="logo-image">
+                    </a>
                 </div>
                 <div class="search_input_button">
                     <input type="text" name="q" class="search_input" placeholder="Rechercher un produit">
@@ -729,7 +743,8 @@
                 <div class="button_icons">
                     <button class="button_vendre" id="vendreBtn">Vendre</button>
                     <a href="favoris.html" class="icone"><i class="bi bi-heart"></i></a>
-                    <a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge" id="cartCount">0</span></a>                    
+                    <a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span
+                            class="cart-badge" id="cartCount">0</span></a>
                     <a href="profil.html" class="icone"><i class="bi bi-person"></i></a>
                 </div>
             </div>
@@ -828,7 +843,8 @@
                     <div class="favorite-info">
                         <div class="favorite-category">TÉLÉPHONES</div>
                         <h3 class="favorite-name">iPhone 17 Pro Max 256Go - Noir Titane</h3>
-                        <p class="favorite-description">Smartphone haut de gamme avec écran 6.7", triple caméra et puce A18 Pro</p>
+                        <p class="favorite-description">Smartphone haut de gamme avec écran 6.7", triple caméra et puce
+                            A18 Pro</p>
                         <div class="favorite-price">
                             550 000 FCFA
                             <span class="favorite-old-price">650 000 FCFA</span>
@@ -857,7 +873,8 @@
                     <div class="favorite-info">
                         <div class="favorite-category">TÉLÉPHONES</div>
                         <h3 class="favorite-name">Samsung Galaxy S24 Ultra 512Go</h3>
-                        <p class="favorite-description">Écran Dynamic AMOLED 2X 6.8", S Pen intégré, appareil photo 200MP</p>
+                        <p class="favorite-description">Écran Dynamic AMOLED 2X 6.8", S Pen intégré, appareil photo
+                            200MP</p>
                         <div class="favorite-price">
                             480 000 FCFA
                             <span class="favorite-old-price">550 000 FCFA</span>
@@ -886,7 +903,8 @@
                     <div class="favorite-info">
                         <div class="favorite-category">ACCESSOIRES</div>
                         <h3 class="favorite-name">AirPods Pro 2ème génération</h3>
-                        <p class="favorite-description">Écouteurs sans fil avec réduction de bruit active et boîtier MagSafe</p>
+                        <p class="favorite-description">Écouteurs sans fil avec réduction de bruit active et boîtier
+                            MagSafe</p>
                         <div class="favorite-price">75 000 FCFA</div>
                         <div class="favorite-rating">
                             <div class="stars">★★★★★</div>
@@ -911,7 +929,8 @@
                     <div class="favorite-info">
                         <div class="favorite-category">ORDINATEURS</div>
                         <h3 class="favorite-name">MacBook Pro M3 14" 512Go</h3>
-                        <p class="favorite-description">Ordinateur portable Apple avec écran Liquid Retina XDR et puce M3</p>
+                        <p class="favorite-description">Ordinateur portable Apple avec écran Liquid Retina XDR et puce
+                            M3</p>
                         <div class="favorite-price">850 000 FCFA</div>
                         <div class="favorite-rating">
                             <div class="stars">★★★★★</div>
@@ -936,7 +955,8 @@
                     <div class="favorite-info">
                         <div class="favorite-category">ÉLECTRONIQUE</div>
                         <h3 class="favorite-name">Enceinte Bluetooth JBL Charge 5</h3>
-                        <p class="favorite-description">Enceinte portable étanche avec batterie longue durée et son puissant</p>
+                        <p class="favorite-description">Enceinte portable étanche avec batterie longue durée et son
+                            puissant</p>
                         <div class="favorite-price">45 000 FCFA</div>
                         <div class="favorite-rating">
                             <div class="stars">★★★★☆</div>
@@ -1021,56 +1041,56 @@
             </div>
         </div>
         <!-- MOBILE OVERLAY MENU CORRIGÉ -->
-<div class="mobile-overlay" id="mobileOverlay">
-    <div class="mobile-overlay-header">
-        <h2><i class="bi bi-grid-3x3-gap"></i> Menu</h2>
-        <button class="mobile-close-btn" id="mobileCloseBtn">&times;</button>
-    </div>
-    
-    <div class="mobile-overlay-content">
-        <!-- Navigation Links -->
-        <div class="mobile-nav-section">
-            <h3>Navigation</h3>
-            <ul class="mobile-nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="profil.html">Mon Profil</a></li>
-                <li><a href="favoris.html">Mes Favoris</a></li>
-                <li><a href="panier.html">Mon Panier</a></li>
-                <li><a href="vendeur.html">Espace Vendeur</a></li>
-            </ul>
-        </div>
+        <div class="mobile-overlay" id="mobileOverlay">
+            <div class="mobile-overlay-header">
+                <h2><i class="bi bi-grid-3x3-gap"></i> Menu</h2>
+                <button class="mobile-close-btn" id="mobileCloseBtn">&times;</button>
+            </div>
 
-        <!-- Categories Section -->
-        <div class="mobile-nav-section">
-            <h3>Catégories</h3>
-            <ul class="mobile-nav-links">
-                <li><a href="categorie.html">Toutes les catégories</a></li>
-                <li><a href="produits.html?categorie=telephones">Téléphones</a></li>
-                <li><a href="produits.html?categorie=ordinateurs">Ordinateurs</a></li>
-                <li><a href="produits.html?categorie=electronique">Électronique</a></li>
-                <li><a href="produits.html?categorie=mode">Mode</a></li>
-            </ul>
-        </div>
+            <div class="mobile-overlay-content">
+                <!-- Navigation Links -->
+                <div class="mobile-nav-section">
+                    <h3>Navigation</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="profil.html">Mon Profil</a></li>
+                        <li><a href="favoris.html">Mes Favoris</a></li>
+                        <li><a href="panier.html">Mon Panier</a></li>
+                        <li><a href="vendeur.html">Espace Vendeur</a></li>
+                    </ul>
+                </div>
 
-        <!-- Informations -->
-        <div class="mobile-nav-section">
-            <h3>Informations</h3>
-            <ul class="mobile-nav-links">
-                <li><a href="index.html#frais">Nos Frais</a></li>
-                <li><a href="index.html#pq_chezBaba">Pourquoi ChezBaba?</a></li>
-                <li><a href="index.html#outils">Nos Outils</a></li>
-                <li><a href="index.html#comment_vendre">Comment Vendre</a></li>
-            </ul>
-        </div>
-    </div>
+                <!-- Categories Section -->
+                <div class="mobile-nav-section">
+                    <h3>Catégories</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="categorie.html">Toutes les catégories</a></li>
+                        <li><a href="produits.html?categorie=telephones">Téléphones</a></li>
+                        <li><a href="produits.html?categorie=ordinateurs">Ordinateurs</a></li>
+                        <li><a href="produits.html?categorie=electronique">Électronique</a></li>
+                        <li><a href="produits.html?categorie=mode">Mode</a></li>
+                    </ul>
+                </div>
 
-    <div class="mobile-overlay-footer">
-        <div class="mobile-auth-buttons">
-            <button class="mobile-auth-btn secondary" id="mobileLoginBtn">Connexion</button>
-            <button class="mobile-auth-btn primary" id="mobileRegisterBtn">Inscription</button>
+                <!-- Informations -->
+                <div class="mobile-nav-section">
+                    <h3>Informations</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html#frais">Nos Frais</a></li>
+                        <li><a href="index.html#pq_chezBaba">Pourquoi ChezBaba?</a></li>
+                        <li><a href="index.html#outils">Nos Outils</a></li>
+                        <li><a href="index.html#comment_vendre">Comment Vendre</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-overlay-footer">
+                <div class="mobile-auth-buttons">
+                    <button class="mobile-auth-btn secondary" id="mobileLoginBtn">Connexion</button>
+                    <button class="mobile-auth-btn primary" id="mobileRegisterBtn">Inscription</button>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
     </main>
 
     <!-- FOOTER -->
@@ -1079,7 +1099,7 @@
             <div class="footer-section footer-logo-section">
                 <h2>Chez<span class="baba">Baba</span></h2>
                 <p class="footer-description">
-                    La marketplace de référence pour vendre et acheter en toute sécurité. 
+                    La marketplace de référence pour vendre et acheter en toute sécurité.
                     Rejoignez des millions d'utilisateurs qui nous font confiance.
                 </p>
                 <div class="footer-social">
@@ -1152,20 +1172,20 @@
 
     <script>
         window.addEventListener('load', () => {
-    setTimeout(() => document.getElementById('pageLoader').classList.add('hidden'), 300);
-});
-// ============================================
-// GESTION DU BADGE DU PANIER
-// ============================================
+            setTimeout(() => document.getElementById('pageLoader').classList.add('hidden'), 300);
+        });
+        // ============================================
+        // GESTION DU BADGE DU PANIER
+        // ============================================
         function updateCartBadge() {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const total = cart.reduce((sum, item) => sum + parseInt(item.quantity || 1), 0);
-    document.querySelectorAll('#cartCount').forEach(b => {
-        b.textContent = total;
-        b.style.display = total > 0 ? 'flex' : 'none';
-    });
-}
-window.addEventListener('load', updateCartBadge);
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const total = cart.reduce((sum, item) => sum + parseInt(item.quantity || 1), 0);
+            document.querySelectorAll('#cartCount').forEach(b => {
+                b.textContent = total;
+                b.style.display = total > 0 ? 'flex' : 'none';
+            });
+        }
+        window.addEventListener('load', updateCartBadge);
         // ============================================
         // GESTION DES FAVORIS
         // ============================================
@@ -1211,7 +1231,7 @@ window.addEventListener('load', updateCartBadge);
         // Mettre à jour l'affichage des favoris
         function updateFavoritesDisplay() {
             const favoritesGrid = document.getElementById('favoritesGrid');
-            
+
             if (favorites.length === 0) {
                 favoritesGrid.innerHTML = `
                     <div class="empty-favorites" style="grid-column: 1 / -1;">
@@ -1285,7 +1305,7 @@ window.addEventListener('load', updateCartBadge);
         function updateStats() {
             const totalValue = favorites.reduce((sum, item) => sum + item.price, 0);
             const categories = [...new Set(favorites.map(item => item.category))];
-            
+
             document.getElementById('favoritesCount').textContent = favorites.length;
             document.getElementById('totalValue').textContent = totalValue.toLocaleString();
             document.getElementById('categoriesCount').textContent = categories.length;
@@ -1295,7 +1315,7 @@ window.addEventListener('load', updateCartBadge);
         function attachEventListeners() {
             // Retirer des favoris
             document.querySelectorAll('.action-remove').forEach(btn => {
-                btn.addEventListener('click', function() {
+                btn.addEventListener('click', function () {
                     const productId = parseInt(this.dataset.id);
                     removeFromFavorites(productId);
                 });
@@ -1303,7 +1323,7 @@ window.addEventListener('load', updateCartBadge);
 
             // Ajouter au panier
             document.querySelectorAll('.action-cart').forEach(btn => {
-                btn.addEventListener('click', function() {
+                btn.addEventListener('click', function () {
                     const productId = parseInt(this.dataset.id);
                     addToCartFromFavorites(productId);
                 });
@@ -1317,7 +1337,7 @@ window.addEventListener('load', updateCartBadge);
                 favorites = favorites.filter(item => item.id !== productId);
                 saveFavorites();
                 updateFavoritesDisplay();
-                
+
                 // Animation de suppression
                 const card = document.querySelector(`[data-id="${productId}"]`).closest('.favorite-card');
                 card.style.animation = 'fadeOut 0.3s ease';
@@ -1333,10 +1353,10 @@ window.addEventListener('load', updateCartBadge);
             if (product) {
                 // Récupérer le panier existant
                 let cart = JSON.parse(localStorage.getItem('cart')) || [];
-                
+
                 // Vérifier si le produit est déjà dans le panier
                 const existingItem = cart.find(item => item.id === productId);
-                
+
                 if (existingItem) {
                     existingItem.quantity += 1;
                 } else {
@@ -1349,13 +1369,13 @@ window.addEventListener('load', updateCartBadge);
                         category: product.category
                     });
                 }
-                
+
                 // Sauvegarder le panier
                 localStorage.setItem('cart', JSON.stringify(cart));
-                
+
                 // Feedback utilisateur
                 alert(`"${product.name}" ajouté au panier !`);
-                
+
                 // Animation du bouton
                 const btn = document.querySelector(`.action-cart[data-id="${productId}"]`);
                 btn.style.transform = 'scale(0.9)';
@@ -1364,7 +1384,7 @@ window.addEventListener('load', updateCartBadge);
         }
 
         // Tout ajouter au panier
-        document.getElementById('addAllToCart').addEventListener('click', function() {
+        document.getElementById('addAllToCart').addEventListener('click', function () {
             if (favorites.length === 0) {
                 alert('Vos favoris sont vides !');
                 return;
@@ -1372,10 +1392,10 @@ window.addEventListener('load', updateCartBadge);
 
             if (confirm(`Ajouter ${favorites.length} produits au panier ?`)) {
                 let cart = JSON.parse(localStorage.getItem('cart')) || [];
-                
+
                 favorites.forEach(product => {
                     const existingItem = cart.find(item => item.id === product.id);
-                    
+
                     if (existingItem) {
                         existingItem.quantity += 1;
                     } else {
@@ -1389,10 +1409,10 @@ window.addEventListener('load', updateCartBadge);
                         });
                     }
                 });
-                
+
                 localStorage.setItem('cart', JSON.stringify(cart));
                 alert(`${favorites.length} produits ajoutés au panier avec succès !`);
-                
+
                 // Animation du bouton
                 this.style.transform = 'scale(0.95)';
                 setTimeout(() => this.style.transform = 'scale(1)', 200);
@@ -1400,7 +1420,7 @@ window.addEventListener('load', updateCartBadge);
         });
 
         // Tout supprimer
-        document.getElementById('clearAllFavorites').addEventListener('click', function() {
+        document.getElementById('clearAllFavorites').addEventListener('click', function () {
             if (favorites.length === 0) {
                 alert('Vos favoris sont déjà vides !');
                 return;
@@ -1410,13 +1430,13 @@ window.addEventListener('load', updateCartBadge);
                 favorites = [];
                 saveFavorites();
                 updateFavoritesDisplay();
-                
+
                 // Animation de suppression
                 const cards = document.querySelectorAll('.favorite-card');
                 cards.forEach((card, index) => {
                     card.style.animation = `fadeOut 0.3s ease ${index * 100}ms`;
                 });
-                
+
                 setTimeout(() => {
                     updateFavoritesDisplay();
                 }, 500);
@@ -1424,16 +1444,16 @@ window.addEventListener('load', updateCartBadge);
         });
 
         // Filtrage et tri
-        document.getElementById('sortSelect').addEventListener('change', function() {
+        document.getElementById('sortSelect').addEventListener('change', function () {
             sortFavorites(this.value);
         });
 
-        document.getElementById('categorySelect').addEventListener('change', function() {
+        document.getElementById('categorySelect').addEventListener('change', function () {
             filterFavorites(this.value);
         });
 
         function sortFavorites(criteria) {
-            switch(criteria) {
+            switch (criteria) {
                 case 'price-asc':
                     favorites.sort((a, b) => a.price - b.price);
                     break;
@@ -1462,7 +1482,7 @@ window.addEventListener('load', updateCartBadge);
         }
 
         // Initialisation
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             loadFavorites();
             console.log('✅ Page Favoris chargée');
         });
@@ -1486,147 +1506,148 @@ window.addEventListener('load', updateCartBadge);
         });
     </script>
     <script>
-    // ============================================
-    // GESTION NAVIGATION MOBILE - UNIFIÉE
-    // ============================================
+        // ============================================
+        // GESTION NAVIGATION MOBILE - UNIFIÉE
+        // ============================================
 
-    // Menu mobile overlay
-    const mobileOverlay = document.getElementById('mobileOverlay');
-    const mobileCategoryIcon = document.getElementById('mobileCategoryIcon');
-    const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+        // Menu mobile overlay
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        const mobileCategoryIcon = document.getElementById('mobileCategoryIcon');
+        const mobileCloseBtn = document.getElementById('mobileCloseBtn');
 
-    // Ouvrir le menu mobile
-    if (mobileCategoryIcon) {
-        mobileCategoryIcon.addEventListener('click', function(e) {
-            e.preventDefault();
-            openMobileOverlay();
-        });
-    }
+        // Ouvrir le menu mobile
+        if (mobileCategoryIcon) {
+            mobileCategoryIcon.addEventListener('click', function (e) {
+                e.preventDefault();
+                openMobileOverlay();
+            });
+        }
 
-    // Fermer le menu mobile
-    if (mobileCloseBtn) {
-        mobileCloseBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            closeMobileOverlay();
-        });
-    }
+        // Fermer le menu mobile
+        if (mobileCloseBtn) {
+            mobileCloseBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                closeMobileOverlay();
+            });
+        }
 
-    // Fermer en cliquant à l'extérieur
-    if (mobileOverlay) {
-        mobileOverlay.addEventListener('click', function(e) {
-            if (e.target === mobileOverlay) {
+        // Fermer en cliquant à l'extérieur
+        if (mobileOverlay) {
+            mobileOverlay.addEventListener('click', function (e) {
+                if (e.target === mobileOverlay) {
+                    closeMobileOverlay();
+                }
+            });
+        }
+
+        // Fermer avec la touche Échap
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && mobileOverlay.classList.contains('active')) {
                 closeMobileOverlay();
             }
         });
-    }
 
-    // Fermer avec la touche Échap
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && mobileOverlay.classList.contains('active')) {
-            closeMobileOverlay();
-        }
-    });
-
-    function openMobileOverlay() {
-        if (mobileOverlay) {
-            mobileOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-    }
-
-    function closeMobileOverlay() {
-        if (mobileOverlay) {
-            mobileOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-    }
-
-    // Navigation dans le menu mobile
-    document.querySelectorAll('.mobile-nav-links a').forEach(link => {
-        link.addEventListener('click', function() {
-            closeMobileOverlay();
-        });
-    });
-
-    // ============================================
-    // RECHERCHE MOBILE - UNIFIÉE
-    // ============================================
-
-    // Recherche avec l'icône mobile
-    document.querySelectorAll('.search-icon-mobile').forEach(icon => {
-        icon.addEventListener('click', function(e) {
-            e.preventDefault();
-            const searchInput = this.closest('.search_input_button').querySelector('.search_input');
-            const searchTerm = searchInput.value.trim();
-            
-            if (searchTerm) {
-                window.location.href = `produits.html?search=${encodeURIComponent(searchTerm)}`;
-            } else {
-                searchInput.focus();
+        function openMobileOverlay() {
+            if (mobileOverlay) {
+                mobileOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
             }
-        });
-    });
+        }
 
-    // Recherche avec le bouton (desktop)
-    document.querySelectorAll('.search_button').forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-            const searchInput = this.closest('.search_input_button').querySelector('.search_input');
-            const searchTerm = searchInput.value.trim();
-            
-            if (searchTerm) {
-                window.location.href = `produits.html?search=${encodeURIComponent(searchTerm)}`;
+        function closeMobileOverlay() {
+            if (mobileOverlay) {
+                mobileOverlay.classList.remove('active');
+                document.body.style.overflow = '';
             }
-        });
-    });
+        }
 
-    // Recherche avec Entrée
-    document.querySelectorAll('.search_input').forEach(input => {
-        input.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
+        // Navigation dans le menu mobile
+        document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+            link.addEventListener('click', function () {
+                closeMobileOverlay();
+            });
+        });
+
+        // ============================================
+        // RECHERCHE MOBILE - UNIFIÉE
+        // ============================================
+
+        // Recherche avec l'icône mobile
+        document.querySelectorAll('.search-icon-mobile').forEach(icon => {
+            icon.addEventListener('click', function (e) {
                 e.preventDefault();
-                const searchTerm = this.value.trim();
-                
+                const searchInput = this.closest('.search_input_button').querySelector('.search_input');
+                const searchTerm = searchInput.value.trim();
+
+                if (searchTerm) {
+                    window.location.href = `produits.html?search=${encodeURIComponent(searchTerm)}`;
+                } else {
+                    searchInput.focus();
+                }
+            });
+        });
+
+        // Recherche avec le bouton (desktop)
+        document.querySelectorAll('.search_button').forEach(button => {
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+                const searchInput = this.closest('.search_input_button').querySelector('.search_input');
+                const searchTerm = searchInput.value.trim();
+
                 if (searchTerm) {
                     window.location.href = `produits.html?search=${encodeURIComponent(searchTerm)}`;
                 }
+            });
+        });
+
+        // Recherche avec Entrée
+        document.querySelectorAll('.search_input').forEach(input => {
+            input.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    const searchTerm = this.value.trim();
+
+                    if (searchTerm) {
+                        window.location.href = `produits.html?search=${encodeURIComponent(searchTerm)}`;
+                    }
+                }
+            });
+        });
+
+        // ============================================
+        // MODALS - UNIFIÉES
+        // ============================================
+
+        // Gestion des modals de connexion/inscription
+        document.addEventListener('DOMContentLoaded', function () {
+            // Boutons de connexion
+            document.querySelectorAll('#loginBtn, #mobileLoginBtn').forEach(btn => {
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    openModal('login');
+                });
+            });
+
+            // Boutons d'inscription
+            document.querySelectorAll('#registerBtn, #mobileRegisterBtn').forEach(btn => {
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    openModal('register');
+                });
+            });
+
+            // Bouton vendre
+            const vendreBtn = document.getElementById('vendreBtn');
+            if (vendreBtn) {
+                vendreBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    openModal('sellerRegister');
+                });
             }
         });
-    });
 
-    // ============================================
-    // MODALS - UNIFIÉES
-    // ============================================
-
-    // Gestion des modals de connexion/inscription
-    document.addEventListener('DOMContentLoaded', function() {
-        // Boutons de connexion
-        document.querySelectorAll('#loginBtn, #mobileLoginBtn').forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                openModal('login');
-            });
-        });
-
-        // Boutons d'inscription
-        document.querySelectorAll('#registerBtn, #mobileRegisterBtn').forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                openModal('register');
-            });
-        });
-
-        // Bouton vendre
-        const vendreBtn = document.getElementById('vendreBtn');
-        if (vendreBtn) {
-            vendreBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                openModal('sellerRegister');
-            });
-        }
-    });
-
-    console.log('✅ Navigation mobile initialisée');
-</script>
+        console.log('✅ Navigation mobile initialisée');
+    </script>
 </body>
+
 </html>

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catégories - ChezBaba</title>
     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
         /* LAYOUT PRINCIPAL - 2 COLONNES */
@@ -34,7 +36,7 @@
         .categories-sidebar {
             background-color: var(--white);
             border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             padding: 20px 0;
             height: fit-content;
             max-height: calc(100vh - 200px);
@@ -107,7 +109,7 @@
         .category-details {
             background-color: var(--white);
             border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             padding: 40px;
         }
 
@@ -167,7 +169,7 @@
 
         .subcategory-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
             color: var(--blue);
         }
 
@@ -213,7 +215,7 @@
 
         .product-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
 
         .product-image {
@@ -328,6 +330,7 @@
                 opacity: 0;
                 transform: translateY(10px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -687,16 +690,19 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Loader -->
-    <div id="pageLoader"><div class="spinner"></div></div>
+    <div id="pageLoader">
+        <div class="spinner"></div>
+    </div>
     <!-- NAVIGATION -->
     <nav>
         <div class="navBar">
             <div class="navBar_connexion_inscription">
                 <p class="navBar_connexion_inscrption_text">
                     Bonjour!
-                    <a href="#" class="connexion_link" id="loginBtn">Connecter vous</a> ou 
+                    <a href="#" class="connexion_link" id="loginBtn">Connecter vous</a> ou
                     <a href="#" class="inscription_link" id="registerBtn">Inscrivez-vous</a>
                     <a href="#" class="aide_link">Aide</a>
                 </p>
@@ -705,11 +711,13 @@
                 <div class="nav-mobile-logo">
                     <a href="index.html" class="mobile-logo" aria-label="Accueil ChezBaba">
                         <img src="img/logo-removebg-preview.png" alt="ChezBaba Logo" class="mobile-logo-image">
-                     </a>
+                    </a>
                 </div>
                 <div class="mobile-icone">
                     <!-- <a href="favoris.html" class="icone"><i class="bi bi-heart"></i></a> -->
-                    <a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge" id="cartCount">0</span></a>                    <a href="profil.html" class="icone"><i class="bi bi-person"></i></a>
+                    <a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span
+                            class="cart-badge" id="cartCount">0</span></a> <a href="profil.html" class="icone"><i
+                            class="bi bi-person"></i></a>
                 </div>
             </div>
             <div class="logo_searchBar_button">
@@ -730,12 +738,16 @@
                 </div>
                 <div class="button_icons">
                     <button class="button_vendre" id="vendreBtn">Vendre</button>
-                    <a href="#" class="icone"><i class="bi bi-heart"></i></a><a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge" id="cartCount">0</span></a>                    <a href="profil.html" class="icone"><i class="bi bi-person"></i></a>
+                    <a href="#" class="icone"><i class="bi bi-heart"></i></a><a href="panier.html" class="icone"
+                        style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge"
+                            id="cartCount">0</span></a> <a href="profil.html" class="icone"><i
+                            class="bi bi-person"></i></a>
                 </div>
             </div>
             <div class="categorie_navigation">
                 <div class="categorie">
-                    <button id="openCategories" class="categorieBtn" onclick="window.location.href ='categorie.html'"><i class="bi bi-list"></i><span>Catégories</span></button>
+                    <button id="openCategories" class="categorieBtn" onclick="window.location.href ='categorie.html'"><i
+                            class="bi bi-list"></i><span>Catégories</span></button>
                 </div>
                 <div class="navigation">
                     <ul>
@@ -842,7 +854,8 @@
                     <div class="category-details-header">
                         <i class="bi bi-phone category-details-icon"></i>
                         <h2 class="category-details-title">Téléphones & Accessoires</h2>
-                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et accessoires</p>
+                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et
+                            accessoires</p>
                     </div>
 
                     <div class="subcategories-section">
@@ -936,7 +949,8 @@
                     <div class="category-details-header">
                         <i class="bi bi-laptop category-details-icon"></i>
                         <h2 class="category-details-title">Ordinateurs & Bureau</h2>
-                        <p class="category-details-description">PC portables, de bureau, et accessoires informatiques</p>
+                        <p class="category-details-description">PC portables, de bureau, et accessoires informatiques
+                        </p>
                     </div>
 
                     <div class="subcategories-section">
@@ -1122,7 +1136,8 @@
                     <div class="category-details-header">
                         <i class="bi bi-box category-details-icon"></i>
                         <h2 class="category-details-title">Quincaillerie</h2>
-                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et accessoires</p>
+                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et
+                            accessoires</p>
                     </div>
 
                     <div class="subcategories-section">
@@ -1215,7 +1230,8 @@
                     <div class="category-details-header">
                         <i class="bi bi-house category-details-icon"></i>
                         <h2 class="category-details-title">Maison & Jardin</h2>
-                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et accessoires</p>
+                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et
+                            accessoires</p>
                     </div>
 
                     <div class="subcategories-section">
@@ -1308,7 +1324,8 @@
                     <div class="category-details-header">
                         <i class="bi bi-controller category-details-icon"></i>
                         <h2 class="category-details-title">Jeux & Jouets</h2>
-                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et accessoires</p>
+                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et
+                            accessoires</p>
                     </div>
 
                     <div class="subcategories-section">
@@ -1401,7 +1418,8 @@
                     <div class="category-details-header">
                         <i class="bi bi-handbag category-details-icon"></i>
                         <h2 class="category-details-title">Mode</h2>
-                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et accessoires</p>
+                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et
+                            accessoires</p>
                     </div>
 
                     <div class="subcategories-section">
@@ -1495,7 +1513,8 @@
                     <div class="category-details-header">
                         <i class="bi bi-tools category-details-icon"></i>
                         <h2 class="category-details-title">Batiment trvaux public</h2>
-                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et accessoires</p>
+                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et
+                            accessoires</p>
                     </div>
 
                     <div class="subcategories-section">
@@ -1589,7 +1608,8 @@
                     <div class="category-details-header">
                         <i class="bi bi-car-front category-details-icon"></i>
                         <h2 class="category-details-title">Véhicules</h2>
-                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et accessoires</p>
+                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et
+                            accessoires</p>
                     </div>
 
                     <div class="subcategories-section">
@@ -1682,7 +1702,8 @@
                     <div class="category-details-header">
                         <i class="bi bi-basket category-details-icon"></i>
                         <h2 class="category-details-title">Sports & Loisirs</h2>
-                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et accessoires</p>
+                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et
+                            accessoires</p>
                     </div>
 
                     <div class="subcategories-section">
@@ -1776,7 +1797,8 @@
                     <div class="category-details-header">
                         <i class="bi bi-heart-pulse category-details-icon"></i>
                         <h2 class="category-details-title">Santé & Beauté</h2>
-                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et accessoires</p>
+                        <p class="category-details-description">Découvrez notre large gamme de smartphones, tablettes et
+                            accessoires</p>
                     </div>
 
                     <div class="subcategories-section">
@@ -1873,56 +1895,56 @@
             </div>
         </div>
         <!-- MOBILE OVERLAY MENU CORRIGÉ -->
-<div class="mobile-overlay" id="mobileOverlay">
-    <div class="mobile-overlay-header">
-        <h2><i class="bi bi-grid-3x3-gap"></i> Menu</h2>
-        <button class="mobile-close-btn" id="mobileCloseBtn">&times;</button>
-    </div>
-    
-    <div class="mobile-overlay-content">
-        <!-- Navigation Links -->
-        <div class="mobile-nav-section">
-            <h3>Navigation</h3>
-            <ul class="mobile-nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="profil.html">Mon Profil</a></li>
-                <!-- <li><a href="favoris.html">Mes Favoris</a></li> -->
-                <li><a href="panier.html">Mon Panier</a></li>
-                <li><a href="vendeur.html">Espace Vendeur</a></li>
-            </ul>
-        </div>
+        <div class="mobile-overlay" id="mobileOverlay">
+            <div class="mobile-overlay-header">
+                <h2><i class="bi bi-grid-3x3-gap"></i> Menu</h2>
+                <button class="mobile-close-btn" id="mobileCloseBtn">&times;</button>
+            </div>
 
-        <!-- Categories Section -->
-        <div class="mobile-nav-section">
-            <h3>Catégories</h3>
-            <ul class="mobile-nav-links">
-                <li><a href="categorie.html">Toutes les catégories</a></li>
-                <li><a href="produits.html?categorie=telephones">Téléphones</a></li>
-                <li><a href="produits.html?categorie=ordinateurs">Ordinateurs</a></li>
-                <li><a href="produits.html?categorie=electronique">Électronique</a></li>
-                <li><a href="produits.html?categorie=mode">Mode</a></li>
-            </ul>
-        </div>
+            <div class="mobile-overlay-content">
+                <!-- Navigation Links -->
+                <div class="mobile-nav-section">
+                    <h3>Navigation</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="profil.html">Mon Profil</a></li>
+                        <!-- <li><a href="favoris.html">Mes Favoris</a></li> -->
+                        <li><a href="panier.html">Mon Panier</a></li>
+                        <li><a href="vendeur.html">Espace Vendeur</a></li>
+                    </ul>
+                </div>
 
-        <!-- Informations -->
-        <div class="mobile-nav-section">
-            <h3>Informations</h3>
-            <ul class="mobile-nav-links">
-                <li><a href="index.html#frais">Nos Frais</a></li>
-                <li><a href="index.html#pq_chezBaba">Pourquoi ChezBaba?</a></li>
-                <li><a href="index.html#outils">Nos Outils</a></li>
-                <li><a href="index.html#comment_vendre">Comment Vendre</a></li>
-            </ul>
-        </div>
-    </div>
+                <!-- Categories Section -->
+                <div class="mobile-nav-section">
+                    <h3>Catégories</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="categorie.html">Toutes les catégories</a></li>
+                        <li><a href="produits.html?categorie=telephones">Téléphones</a></li>
+                        <li><a href="produits.html?categorie=ordinateurs">Ordinateurs</a></li>
+                        <li><a href="produits.html?categorie=electronique">Électronique</a></li>
+                        <li><a href="produits.html?categorie=mode">Mode</a></li>
+                    </ul>
+                </div>
 
-    <div class="mobile-overlay-footer">
-        <div class="mobile-auth-buttons">
-            <button class="mobile-auth-btn secondary" id="mobileLoginBtn">Connexion</button>
-            <button class="mobile-auth-btn primary" id="mobileRegisterBtn">Inscription</button>
+                <!-- Informations -->
+                <div class="mobile-nav-section">
+                    <h3>Informations</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html#frais">Nos Frais</a></li>
+                        <li><a href="index.html#pq_chezBaba">Pourquoi ChezBaba?</a></li>
+                        <li><a href="index.html#outils">Nos Outils</a></li>
+                        <li><a href="index.html#comment_vendre">Comment Vendre</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-overlay-footer">
+                <div class="mobile-auth-buttons">
+                    <button class="mobile-auth-btn secondary" id="mobileLoginBtn">Connexion</button>
+                    <button class="mobile-auth-btn primary" id="mobileRegisterBtn">Inscription</button>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
     </main>
 
     <!-- FOOTER -->
@@ -1931,7 +1953,7 @@
             <div class="footer-section footer-logo-section">
                 <h2>Chez<span class="baba">Baba</span></h2>
                 <p class="footer-description">
-                    La marketplace de référence pour vendre et acheter en toute sécurité. 
+                    La marketplace de référence pour vendre et acheter en toute sécurité.
                     Rejoignez des millions d'utilisateurs qui nous font confiance.
                 </p>
                 <div class="footer-social">
@@ -2003,30 +2025,30 @@
     </footer>
 
     <script>
-    window.addEventListener('load', () => {
-    setTimeout(() => document.getElementById('pageLoader').classList.add('hidden'), 300);
-});
+        window.addEventListener('load', () => {
+            setTimeout(() => document.getElementById('pageLoader').classList.add('hidden'), 300);
+        });
         function updateCartBadge() {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const total = cart.reduce((sum, item) => sum + parseInt(item.quantity || 1), 0);
-    document.querySelectorAll('#cartCount').forEach(b => {
-        b.textContent = total;
-        b.style.display = total > 0 ? 'flex' : 'none';
-    });
-}
-window.addEventListener('load', updateCartBadge);
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const total = cart.reduce((sum, item) => sum + parseInt(item.quantity || 1), 0);
+            document.querySelectorAll('#cartCount').forEach(b => {
+                b.textContent = total;
+                b.style.display = total > 0 ? 'flex' : 'none';
+            });
+        }
+        window.addEventListener('load', updateCartBadge);
         // Gestion du changement de catégorie
         const categoryItems = document.querySelectorAll('.category-list-item');
         const categoryContents = document.querySelectorAll('.category-content');
 
         categoryItems.forEach(item => {
-            item.addEventListener('click', function() {
+            item.addEventListener('click', function () {
                 categoryItems.forEach(cat => cat.classList.remove('active'));
                 this.classList.add('active');
                 categoryContents.forEach(content => content.classList.remove('active'));
                 const categoryId = this.getAttribute('data-category');
                 document.getElementById(categoryId).classList.add('active');
-                
+
                 // Scroll vers le haut de la page pour voir le contenu
                 window.scrollTo({
                     top: document.querySelector('.main-content').offsetTop - 100,
@@ -2037,7 +2059,7 @@ window.addEventListener('load', updateCartBadge);
 
         // Gestion du bouton Voir plus
         document.querySelectorAll('.voir-plus-btn').forEach(btn => {
-            btn.addEventListener('click', function(e) {
+            btn.addEventListener('click', function (e) {
                 e.preventDefault();
                 const category = this.closest('.category-content').id;
                 // Redirection vers la page produits avec la catégorie
@@ -2053,7 +2075,7 @@ window.addEventListener('load', updateCartBadge);
                 .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
                 .replace(/[^a-z0-9]+/g, '-')
                 .replace(/^-+|-+$/g, '');
-            
+
             card.href = `produits.html?categorie=${categorySlug}`;
         });
 
@@ -2072,15 +2094,16 @@ window.addEventListener('load', updateCartBadge);
         });
 
         // Animation du logo
-        document.querySelector('.logo_link').addEventListener('mouseenter', function() {
+        document.querySelector('.logo_link').addEventListener('mouseenter', function () {
             this.style.transform = 'scale(1.1) rotate(2deg)';
         });
 
-        document.querySelector('.logo_link').addEventListener('mouseleave', function() {
+        document.querySelector('.logo_link').addEventListener('mouseleave', function () {
             this.style.transform = 'scale(1) rotate(0deg)';
         });
 
         console.log('Page Catégories ChezBaba chargée! 🚀');
     </script>
 </body>
+
 </html>

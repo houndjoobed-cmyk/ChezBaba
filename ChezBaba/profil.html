@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Profil - ChezBaba</title>
     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
         :root {
-            --blue:#9ACD32;
+            --blue: #9ACD32;
             --black: #000000;
             --darkgray1: #333333;
             --darkgray: #999999;
@@ -17,14 +19,14 @@
             --slategray: #404E4D;
             --green: #758e4f;
             --white: #ffffff;
-            --orange: #EA9010; 
+            --orange: #EA9010;
             --pink: #FD6C9E;
             --teal: #17a2b8;
             --alibaba-orange: #ff6900;
             --alibaba-green: #00a86b;
             --alibaba-gray: #f5f5f5;
             --alibaba-dark: #333;
-                --darkblue: #0C1B33;
+            --darkblue: #0C1B33;
 
         }
 
@@ -42,7 +44,7 @@
         }
 
         /* ===== NAVIGATION ===== */
-        
+
 
         /* ===== MAIN CONTENT ===== */
         .main-content {
@@ -80,7 +82,7 @@
         .profile-sidebar {
             background: var(--white);
             border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             padding: 30px;
             height: fit-content;
             position: sticky;
@@ -105,7 +107,7 @@
             font-size: 2.5em;
             font-weight: bold;
             border: 5px solid var(--white);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .profile-name {
@@ -199,7 +201,7 @@
         .profile-content {
             background: var(--white);
             border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             padding: 40px;
         }
 
@@ -213,8 +215,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .section-header {
@@ -324,7 +333,7 @@
 
         .order-card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         }
 
         .order-header {
@@ -427,7 +436,7 @@
 
         .favorite-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
 
         .favorite-image {
@@ -560,15 +569,15 @@
             border-radius: 50%;
         }
 
-        input:checked + .slider {
+        input:checked+.slider {
             background-color: var(--blue);
         }
 
-        input:checked + .slider:before {
+        input:checked+.slider:before {
             transform: translateX(26px);
         }
 
-        
+
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) {
@@ -579,6 +588,7 @@
         }
 
         @media (max-width: 768px) {
+
             .navBar_connexion_inscription,
             .categorie_navigation,
             .button_icons {
@@ -709,16 +719,19 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Loader -->
-    <div id="pageLoader"><div class="spinner"></div></div>
+    <div id="pageLoader">
+        <div class="spinner"></div>
+    </div>
     <!-- NAVIGATION -->
     <nav>
         <div class="navBar">
             <div class="navBar_connexion_inscription">
                 <p class="navBar_connexion_inscrption_text">
                     Bonjour!
-                    <a href="#" class="connexion_link" id="loginBtn">Connecter vous</a> ou 
+                    <a href="#" class="connexion_link" id="loginBtn">Connecter vous</a> ou
                     <a href="#" class="inscription_link" id="registerBtn">Inscrivez-vous</a>
                     <a href="#" class="aide_link">Aide</a>
                 </p>
@@ -729,13 +742,15 @@
                         Chez<span class="baba">Baba</span>
                     </a>
                 </div class="mobile-icone">
-                    <a href="favoris.html" class="icone"><i class="bi bi-heart"></i></a><a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge" id="cartCount">0</span></a>                    <a href="profil.html" class="icone"><i class="bi bi-person"></i></a>
-                </div>
-                <div class="logo_searchBar_button">
+                <a href="favoris.html" class="icone"><i class="bi bi-heart"></i></a><a href="panier.html" class="icone"
+                    style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge"
+                        id="cartCount">0</span></a> <a href="profil.html" class="icone"><i class="bi bi-person"></i></a>
+            </div>
+            <div class="logo_searchBar_button">
                 <div class="nav_logo">
-                        <a href="index.html" class="logo_link" aria-label="Accueil ChezBaba">
-                            <img src="img/logo-removebg-preview.png" alt="ChezBaba Logo" class="logo-image">
-                        </a>
+                    <a href="index.html" class="logo_link" aria-label="Accueil ChezBaba">
+                        <img src="img/logo-removebg-preview.png" alt="ChezBaba Logo" class="logo-image">
+                    </a>
                 </div>
                 <div class="search_input_button">
                     <input type="text" name="q" class="search_input" placeholder="Rechercher un produit">
@@ -749,12 +764,16 @@
                 </div>
                 <div class="button_icons">
                     <button class="button_vendre" id="vendreBtn">Vendre</button>
-                    <a href="#" class="icone"><i class="bi bi-heart"></i></a><a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge" id="cartCount">0</span></a>                    <a href="profil.html" class="icone"><i class="bi bi-person"></i></a>
+                    <a href="#" class="icone"><i class="bi bi-heart"></i></a><a href="panier.html" class="icone"
+                        style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge"
+                            id="cartCount">0</span></a> <a href="profil.html" class="icone"><i
+                            class="bi bi-person"></i></a>
                 </div>
             </div>
             <div class="categorie_navigation">
                 <div class="categorie">
-                    <button id="openCategories" class="categorieBtn" onclick="window.location.href ='categorie.html'"><i class="bi bi-list"></i><span>Catégories</span></button>
+                    <button id="openCategories" class="categorieBtn" onclick="window.location.href ='categorie.html'"><i
+                            class="bi bi-list"></i><span>Catégories</span></button>
                 </div>
                 <div class="navigation">
                     <ul>
@@ -800,7 +819,7 @@
                     </div>
                 </div>
 
-                
+
             </aside>
 
             <!-- Main Content -->
@@ -1091,23 +1110,23 @@
             </div>
         </div>
         <!-- MOBILE OVERLAY MENU -->
-    <div class="mobile-overlay" id="mobileOverlay">
-        <div class="mobile-overlay-header">
-            <h2><i class="bi bi-grid-3x3-gap"></i> Menu</h2>
-            <button class="mobile-close-btn" id="mobileCloseBtn">&times;</button>
-        </div>
-        
-        <div class="mobile-overlay-content">
-            <!-- Navigation Links -->
-            <div class="mobile-nav-section">
-                <h3>Navigation</h3>
-                <ul class="mobile-nav-links">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="categorie.html">Toutes les catégories</a></li>
-                </ul>
+        <div class="mobile-overlay" id="mobileOverlay">
+            <div class="mobile-overlay-header">
+                <h2><i class="bi bi-grid-3x3-gap"></i> Menu</h2>
+                <button class="mobile-close-btn" id="mobileCloseBtn">&times;</button>
             </div>
 
-            <ul class="profile-menu">
+            <div class="mobile-overlay-content">
+                <!-- Navigation Links -->
+                <div class="mobile-nav-section">
+                    <h3>Navigation</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="categorie.html">Toutes les catégories</a></li>
+                    </ul>
+                </div>
+
+                <ul class="profile-menu">
                     <li class="menu-item">
                         <a href="#informations" class="menu-link active" data-section="informations">
                             <i class="bi bi-person"></i>
@@ -1139,15 +1158,15 @@
                         </a>
                     </li>
                 </ul>
-        </div>
+            </div>
 
-        <div class="mobile-overlay-footer">
-            <div class="mobile-auth-buttons">
-                <button class="mobile-auth-btn secondary" id="mobileLoginBtn">Connexion</button>
-                <button class="mobile-auth-btn primary" id="mobileRegisterBtn">Inscription</button>
+            <div class="mobile-overlay-footer">
+                <div class="mobile-auth-buttons">
+                    <button class="mobile-auth-btn secondary" id="mobileLoginBtn">Connexion</button>
+                    <button class="mobile-auth-btn primary" id="mobileRegisterBtn">Inscription</button>
+                </div>
             </div>
         </div>
-    </div>
 
     </main>
 
@@ -1156,12 +1175,12 @@
         <div class="footer-container">
             <div class="footer-section footer-logo-section">
                 <div class="nav_logo">
-                        <a href="index.html" class="logo_link" aria-label="Accueil ChezBaba">
-                            <img src="img/logo-removebg-preview.png" alt="ChezBaba Logo" class="logo-image">
-                        </a>
+                    <a href="index.html" class="logo_link" aria-label="Accueil ChezBaba">
+                        <img src="img/logo-removebg-preview.png" alt="ChezBaba Logo" class="logo-image">
+                    </a>
                 </div>
                 <p class="footer-description">
-                    La marketplace de référence pour vendre et acheter en toute sécurité. 
+                    La marketplace de référence pour vendre et acheter en toute sécurité.
                     Rejoignez des millions d'utilisateurs qui nous font confiance.
                 </p>
                 <div class="footer-social">
@@ -1234,17 +1253,17 @@
 
     <script>
         window.addEventListener('load', () => {
-    setTimeout(() => document.getElementById('pageLoader').classList.add('hidden'), 300);
-});
+            setTimeout(() => document.getElementById('pageLoader').classList.add('hidden'), 300);
+        });
         function updateCartBadge() {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const total = cart.reduce((sum, item) => sum + parseInt(item.quantity || 1), 0);
-    document.querySelectorAll('#cartCount').forEach(b => {
-        b.textContent = total;
-        b.style.display = total > 0 ? 'flex' : 'none';
-    });
-}
-window.addEventListener('load', updateCartBadge);
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const total = cart.reduce((sum, item) => sum + parseInt(item.quantity || 1), 0);
+            document.querySelectorAll('#cartCount').forEach(b => {
+                b.textContent = total;
+                b.style.display = total > 0 ? 'flex' : 'none';
+            });
+        }
+        window.addEventListener('load', updateCartBadge);
         // ============================================
         // GESTION DU PROFIL
         // ============================================
@@ -1254,14 +1273,14 @@ window.addEventListener('load', updateCartBadge);
         const contentSections = document.querySelectorAll('.content-section');
 
         menuLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
+            link.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 // Retirer active de tous les liens
                 menuLinks.forEach(l => l.classList.remove('active'));
                 // Ajouter active au lien cliqué
                 this.classList.add('active');
-                
+
                 // Cacher toutes les sections
                 contentSections.forEach(section => section.classList.remove('active'));
                 // Afficher la section correspondante
@@ -1275,27 +1294,27 @@ window.addEventListener('load', updateCartBadge);
         const saveInfoBtn = document.getElementById('saveInfoBtn');
         const formInputs = document.querySelectorAll('#informations .form-input');
 
-        editInfoBtn.addEventListener('click', function() {
+        editInfoBtn.addEventListener('click', function () {
             formInputs.forEach(input => input.disabled = false);
             editInfoBtn.style.display = 'none';
             saveInfoBtn.style.display = 'flex';
         });
 
-        saveInfoBtn.addEventListener('click', function() {
+        saveInfoBtn.addEventListener('click', function () {
             formInputs.forEach(input => input.disabled = true);
             saveInfoBtn.style.display = 'none';
             editInfoBtn.style.display = 'flex';
-            
+
             // Sauvegarder les données (simulation)
             const userData = {
                 name: document.getElementById('fullName').value,
                 email: document.getElementById('email').value,
                 phone: document.getElementById('phone').value
             };
-            
+
             localStorage.setItem('userProfile', JSON.stringify(userData));
             updateProfileDisplay();
-            
+
             alert('Informations sauvegardées avec succès !');
         });
 
@@ -1315,7 +1334,7 @@ window.addEventListener('load', updateCartBadge);
         function updateProfileDisplay() {
             const userName = document.getElementById('fullName').value;
             const userEmail = document.getElementById('email').value;
-            
+
             document.getElementById('userName').textContent = userName;
             document.getElementById('userEmail').textContent = userEmail;
             document.getElementById('userAvatar').textContent = getInitials(userName);
@@ -1331,7 +1350,7 @@ window.addEventListener('load', updateCartBadge);
         const clearFavoritesBtn = document.getElementById('clearFavorites');
 
         favoriteRemoveBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
+            btn.addEventListener('click', function () {
                 const card = this.closest('.favorite-card');
                 card.style.animation = 'fadeOut 0.3s ease';
                 setTimeout(() => {
@@ -1341,7 +1360,7 @@ window.addEventListener('load', updateCartBadge);
             });
         });
 
-        clearFavoritesBtn.addEventListener('click', function() {
+        clearFavoritesBtn.addEventListener('click', function () {
             if (confirm('Voulez-vous vraiment supprimer tous vos favoris ?')) {
                 document.querySelectorAll('.favorite-card').forEach(card => {
                     card.style.animation = 'fadeOut 0.3s ease';
@@ -1359,14 +1378,14 @@ window.addEventListener('load', updateCartBadge);
         // Ajouter au panier depuis les favoris
         const favoriteCartBtns = document.querySelectorAll('.favorite-cart');
         favoriteCartBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
+            btn.addEventListener('click', function () {
                 const productName = this.closest('.favorite-card').querySelector('.favorite-name').textContent;
                 alert(`"${productName}" ajouté au panier !`);
             });
         });
 
         // Initialisation
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             loadProfileData();
             console.log('✅ Page profil chargée');
         });
@@ -1406,7 +1425,7 @@ window.addEventListener('load', updateCartBadge);
 
         // Ouvrir le menu mobile
         if (mobileCategoryIcon) {
-            mobileCategoryIcon.addEventListener('click', function(e) {
+            mobileCategoryIcon.addEventListener('click', function (e) {
                 e.preventDefault();
                 openMobileOverlay();
             });
@@ -1414,7 +1433,7 @@ window.addEventListener('load', updateCartBadge);
 
         // Fermer le menu mobile
         if (mobileCloseBtn) {
-            mobileCloseBtn.addEventListener('click', function(e) {
+            mobileCloseBtn.addEventListener('click', function (e) {
                 e.preventDefault();
                 closeMobileOverlay();
             });
@@ -1422,7 +1441,7 @@ window.addEventListener('load', updateCartBadge);
 
         // Fermer en cliquant à l'extérieur
         if (mobileOverlay) {
-            mobileOverlay.addEventListener('click', function(e) {
+            mobileOverlay.addEventListener('click', function (e) {
                 if (e.target === mobileOverlay) {
                     closeMobileOverlay();
                 }
@@ -1430,7 +1449,7 @@ window.addEventListener('load', updateCartBadge);
         }
 
         // Fermer avec la touche Échap
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape' && mobileOverlay.classList.contains('active')) {
                 closeMobileOverlay();
             }
@@ -1452,11 +1471,12 @@ window.addEventListener('load', updateCartBadge);
 
         // Navigation dans le menu mobile
         document.querySelectorAll('.mobile-nav-links a').forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function () {
                 closeMobileOverlay();
             });
         });
 
     </script>
 </body>
+
 </html>

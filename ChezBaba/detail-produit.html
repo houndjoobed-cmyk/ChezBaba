@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPhone 17 Pro Max - ChezBaba</title>
     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
         :root {
@@ -63,7 +65,7 @@
             border-radius: 20px;
             overflow: hidden;
             margin-bottom: 20px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
         }
 
         .main-image {
@@ -140,7 +142,7 @@
             background: white;
             padding: 30px;
             border-radius: 20px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
         }
 
         .product-title {
@@ -301,7 +303,7 @@
             color: white;
             font-weight: bold;
             opacity: 0;
-            text-shadow: 0 0 3px rgba(0,0,0,0.5);
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
         }
 
         .color-option.active::after {
@@ -456,7 +458,7 @@
         .tabs-section {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             margin-bottom: 50px;
         }
@@ -500,8 +502,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Description */
@@ -652,14 +661,14 @@
             background: white;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             transition: all 0.3s;
             cursor: pointer;
         }
 
         .product-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
         }
 
         .product-card-image {
@@ -694,7 +703,7 @@
             background: white;
             padding: 20px 25px;
             border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
             display: flex;
             align-items: center;
             gap: 15px;
@@ -712,6 +721,7 @@
                 transform: translateX(500px);
                 opacity: 0;
             }
+
             to {
                 transform: translateX(0);
                 opacity: 1;
@@ -748,44 +758,52 @@
             }
         }
 
- @media (max-width: 768px) {
-    .main-image {
-        height: 300px; /* Réduire hauteur */
-    }
-    
-    .action-buttons {
-        flex-direction: column; /* Boutons en colonne */
-        gap: 12px;
-    }
-    
-    .btn-wishlist {
-        width: 100%; /* Pleine largeur */
-    }
-    
-    .tabs-header {
-        overflow-x: auto; /* Scroll horizontal */
-    }
-    
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
-    }
-}
+        @media (max-width: 768px) {
+            .main-image {
+                height: 300px;
+                /* Réduire hauteur */
+            }
 
-@media (max-width: 480px) {
-    .main-image {
-        height: 250px;
-    }
-    
-    .thumbnails {
-        grid-template-columns: repeat(3, 1fr); /* 3 miniatures */
-    }
-    
-    .products-grid {
-        grid-template-columns: 1fr; /* 1 colonne */
-    }
-}
+            .action-buttons {
+                flex-direction: column;
+                /* Boutons en colonne */
+                gap: 12px;
+            }
+
+            .btn-wishlist {
+                width: 100%;
+                /* Pleine largeur */
+            }
+
+            .tabs-header {
+                overflow-x: auto;
+                /* Scroll horizontal */
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 colonnes */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-image {
+                height: 250px;
+            }
+
+            .thumbnails {
+                grid-template-columns: repeat(3, 1fr);
+                /* 3 miniatures */
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+                /* 1 colonne */
+            }
+        }
     </style>
 </head>
+
 <body>
     <!-- Loader -->
     <!-- <div id="pageLoader"><div class="spinner"></div></div> -->
@@ -795,7 +813,7 @@
             <div class="navBar_connexion_inscription">
                 <p class="navBar_connexion_inscrption_text">
                     Bonjour!
-                    <a href="#" class="connexion_link" id="loginBtn">Connecter vous</a> ou 
+                    <a href="#" class="connexion_link" id="loginBtn">Connecter vous</a> ou
                     <a href="#" class="inscription_link" id="registerBtn">Inscrivez-vous</a>
                     <a href="#" class="aide_link">Aide</a>
                 </p>
@@ -806,11 +824,11 @@
                         Chez<span class="baba">Baba</span>
                     </a>
                 </div class="mobile-icone">
-                    <a href="#" class="icone"><i class="bi bi-heart"></i></a>
-                    <a href="panier.html" class="icone"><i class="bi bi-cart3"></i></a>
-                    <a href="profil.html" class="icone"><i class="bi bi-person"></i></a>
-                </div>
-                <div class="logo_searchBar_button">
+                <a href="#" class="icone"><i class="bi bi-heart"></i></a>
+                <a href="panier.html" class="icone"><i class="bi bi-cart3"></i></a>
+                <a href="profil.html" class="icone"><i class="bi bi-person"></i></a>
+            </div>
+            <div class="logo_searchBar_button">
                 <div class="nav_logo">
                     <a href="#" class="logo_link" aria-label="Accueil ChezBaba">
                         Chez<span class="baba">Baba</span>
@@ -829,13 +847,15 @@
                 <div class="button_icons">
                     <button class="button_vendre" id="vendreBtn">Vendre</button>
                     <a href="favoris.html" class="icone"><i class="bi bi-heart"></i></a>
-                    <a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge" id="cartCount">0</span></a>                    
+                    <a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span
+                            class="cart-badge" id="cartCount">0</span></a>
                     <a href="profil.html" class="icone"><i class="bi bi-person"></i></a>
                 </div>
             </div>
             <div class="categorie_navigation">
                 <div class="categorie">
-                    <button id="openCategories" class="categorieBtn" onclick="window.location.href ='categorie.html'"><i class="bi bi-list"></i><span>Catégories</span></button>
+                    <button id="openCategories" class="categorieBtn" onclick="window.location.href ='categorie.html'"><i
+                            class="bi bi-list"></i><span>Catégories</span></button>
                 </div>
                 <div class="navigation">
                     <ul>
@@ -891,16 +911,18 @@
             <!-- INFO PRODUIT -->
             <div class="product-info">
                 <h1 class="product-title" id="productTitle">iPhone 17 Pro Max</h1>
-                
+
                 <div class="product-meta">
                     <div class="rating">
                         <span class="stars">★★★★★</span>
                         <span><strong>4.8</strong>/5</span>
-                        <span class="reviews-count" onclick="document.querySelector('.tab-btn[data-tab=reviews]').click()">(124 avis)</span>
+                        <span class="reviews-count"
+                            onclick="document.querySelector('.tab-btn[data-tab=reviews]').click()">(124 avis)</span>
                     </div>
                     <div class="seller-info">
                         <i class="bi bi-shop"></i>
-                        <span>Vendu par <span class="seller-name" onclick="alert('Profil vendeur - À développer')">TechStore</span></span>
+                        <span>Vendu par <span class="seller-name"
+                                onclick="alert('Profil vendeur - À développer')">TechStore</span></span>
                         <span class="seller-badge">Vérifié</span>
                     </div>
                 </div>
@@ -922,10 +944,14 @@
                 <div class="variants-section">
                     <div class="variant-label">Couleur : <span id="selectedColor">Noir Titane</span></div>
                     <div class="variant-options">
-                        <div class="color-option active" style="background: #2c2c2c;" data-color="Noir Titane" title="Noir Titane"></div>
-                        <div class="color-option" style="background: linear-gradient(135deg, #c0c0c0, #e8e8e8);" data-color="Argent" title="Argent"></div>
-                        <div class="color-option" style="background: linear-gradient(135deg, #d4af37, #f4e5c2);" data-color="Or" title="Or"></div>
-                        <div class="color-option" style="background: #1e3a5f;" data-color="Bleu Pacifique" title="Bleu Pacifique"></div>
+                        <div class="color-option active" style="background: #2c2c2c;" data-color="Noir Titane"
+                            title="Noir Titane"></div>
+                        <div class="color-option" style="background: linear-gradient(135deg, #c0c0c0, #e8e8e8);"
+                            data-color="Argent" title="Argent"></div>
+                        <div class="color-option" style="background: linear-gradient(135deg, #d4af37, #f4e5c2);"
+                            data-color="Or" title="Or"></div>
+                        <div class="color-option" style="background: #1e3a5f;" data-color="Bleu Pacifique"
+                            title="Bleu Pacifique"></div>
                     </div>
                 </div>
 
@@ -945,10 +971,12 @@
                     <span class="quantity-label">Quantité :</span>
                     <div class="quantity-controls">
                         <button class="quantity-btn" id="decreaseBtn">-</button>
-                        <input type="number" class="quantity-input" id="quantityInput" value="1" min="1" max="10" readonly>
+                        <input type="number" class="quantity-input" id="quantityInput" value="1" min="1" max="10"
+                            readonly>
                         <button class="quantity-btn" id="increaseBtn">+</button>
                     </div>
-                    <span class="stock-info"><i class="bi bi-check-circle"></i> <span id="stockAmount">15</span> en stock</span>
+                    <span class="stock-info"><i class="bi bi-check-circle"></i> <span id="stockAmount">15</span> en
+                        stock</span>
                 </div>
 
                 <!-- Boutons Actions -->
@@ -1008,15 +1036,20 @@
             <div class="tab-content active" id="description">
                 <div class="description-content">
                     <h3>À propos de ce produit</h3>
-                    <p>Le nouvel iPhone 17 Pro Max représente le summum de l'innovation Apple. Doté de la puce A18 Pro révolutionnaire, il offre des performances inégalées pour toutes vos tâches quotidiennes.</p>
-                    
+                    <p>Le nouvel iPhone 17 Pro Max représente le summum de l'innovation Apple. Doté de la puce A18 Pro
+                        révolutionnaire, il offre des performances inégalées pour toutes vos tâches quotidiennes.</p>
+
                     <h3>Caractéristiques principales</h3>
                     <ul>
-                        <li><strong>Design Titane Premium</strong> - Cadre en titane de qualité aérospatiale, plus léger et plus résistant</li>
-                        <li><strong>Écran ProMotion 120Hz</strong> - Affichage fluide et réactif pour une expérience immersive</li>
-                        <li><strong>Système photo Pro</strong> - Triple caméra 48MP avec zoom optique 5x et mode nuit amélioré</li>
+                        <li><strong>Design Titane Premium</strong> - Cadre en titane de qualité aérospatiale, plus léger
+                            et plus résistant</li>
+                        <li><strong>Écran ProMotion 120Hz</strong> - Affichage fluide et réactif pour une expérience
+                            immersive</li>
+                        <li><strong>Système photo Pro</strong> - Triple caméra 48MP avec zoom optique 5x et mode nuit
+                            amélioré</li>
                         <li><strong>Autonomie exceptionnelle</strong> - Jusqu'à 29 heures de lecture vidéo</li>
-                        <li><strong>Dynamic Island</strong> - Interface intuitive pour vos notifications et activités en cours</li>
+                        <li><strong>Dynamic Island</strong> - Interface intuitive pour vos notifications et activités en
+                            cours</li>
                         <li><strong>Recharge rapide</strong> - 50% de charge en 30 minutes avec chargeur 20W</li>
                     </ul>
 
@@ -1101,7 +1134,8 @@
                             <div style="color: #666; margin-top: 5px;">Basé sur 124 avis</div>
                         </div>
                     </div>
-                    <button class="btn btn-primary" onclick="alert('Écrire un avis - Fonctionnalité à développer')" style="padding: 12px 24px; font-size: 0.95em;">
+                    <button class="btn btn-primary" onclick="alert('Écrire un avis - Fonctionnalité à développer')"
+                        style="padding: 12px 24px; font-size: 0.95em;">
                         <i class="bi bi-pencil"></i> Écrire un avis
                     </button>
                 </div>
@@ -1119,7 +1153,9 @@
                         <div class="review-date">Il y a 2 jours</div>
                     </div>
                     <div class="review-text">
-                        Excellent téléphone ! La qualité de l'écran est incroyable et les performances sont au top. La batterie tient facilement toute la journée même avec une utilisation intensive. Je recommande vivement !
+                        Excellent téléphone ! La qualité de l'écran est incroyable et les performances sont au top. La
+                        batterie tient facilement toute la journée même avec une utilisation intensive. Je recommande
+                        vivement !
                     </div>
                 </div>
 
@@ -1136,7 +1172,8 @@
                         <div class="review-date">Il y a 1 semaine</div>
                     </div>
                     <div class="review-text">
-                        Très bon produit dans l'ensemble. Les photos sont magnifiques même en basse lumière. Seul bémol : le prix est assez élevé, mais la qualité est au rendez-vous.
+                        Très bon produit dans l'ensemble. Les photos sont magnifiques même en basse lumière. Seul bémol
+                        : le prix est assez élevé, mais la qualité est au rendez-vous.
                     </div>
                 </div>
 
@@ -1153,7 +1190,8 @@
                         <div class="review-date">Il y a 2 semaines</div>
                     </div>
                     <div class="review-text">
-                        Meilleur iPhone que j'ai eu ! La puce A18 Pro est ultra rapide, aucun lag même avec plusieurs applications ouvertes. La livraison était rapide et le colis bien emballé. Merci ChezBaba !
+                        Meilleur iPhone que j'ai eu ! La puce A18 Pro est ultra rapide, aucun lag même avec plusieurs
+                        applications ouvertes. La livraison était rapide et le colis bien emballé. Merci ChezBaba !
                     </div>
                 </div>
             </div>
@@ -1164,7 +1202,7 @@
                     <h3><i class="bi bi-truck"></i> Options de livraison</h3>
                     <p><strong>Livraison standard</strong> - 3 à 5 jours ouvrés (Gratuite dès 50 000 FCFA)</p>
                     <p><strong>Livraison express</strong> - 1 à 2 jours ouvrés (5 000 FCFA)</p>
-                    
+
                     <h3><i class="bi bi-shield-check"></i> Garantie et retours</h3>
                     <ul>
                         <li>Garantie fabricant : 1 an</li>
@@ -1226,56 +1264,56 @@
             </div>
         </div>
         <!-- MOBILE OVERLAY MENU CORRIGÉ -->
-<div class="mobile-overlay" id="mobileOverlay">
-    <div class="mobile-overlay-header">
-        <h2><i class="bi bi-grid-3x3-gap"></i> Menu</h2>
-        <button class="mobile-close-btn" id="mobileCloseBtn">&times;</button>
-    </div>
-    
-    <div class="mobile-overlay-content">
-        <!-- Navigation Links -->
-        <div class="mobile-nav-section">
-            <h3>Navigation</h3>
-            <ul class="mobile-nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="profil.html">Mon Profil</a></li>
-                <li><a href="favoris.html">Mes Favoris</a></li>
-                <li><a href="panier.html">Mon Panier</a></li>
-                <li><a href="vendeur.html">Espace Vendeur</a></li>
-            </ul>
-        </div>
+        <div class="mobile-overlay" id="mobileOverlay">
+            <div class="mobile-overlay-header">
+                <h2><i class="bi bi-grid-3x3-gap"></i> Menu</h2>
+                <button class="mobile-close-btn" id="mobileCloseBtn">&times;</button>
+            </div>
 
-        <!-- Categories Section -->
-        <div class="mobile-nav-section">
-            <h3>Catégories</h3>
-            <ul class="mobile-nav-links">
-                <li><a href="categorie.html">Toutes les catégories</a></li>
-                <li><a href="produits.html?categorie=telephones">Téléphones</a></li>
-                <li><a href="produits.html?categorie=ordinateurs">Ordinateurs</a></li>
-                <li><a href="produits.html?categorie=electronique">Électronique</a></li>
-                <li><a href="produits.html?categorie=mode">Mode</a></li>
-            </ul>
-        </div>
+            <div class="mobile-overlay-content">
+                <!-- Navigation Links -->
+                <div class="mobile-nav-section">
+                    <h3>Navigation</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="profil.html">Mon Profil</a></li>
+                        <li><a href="favoris.html">Mes Favoris</a></li>
+                        <li><a href="panier.html">Mon Panier</a></li>
+                        <li><a href="vendeur.html">Espace Vendeur</a></li>
+                    </ul>
+                </div>
 
-        <!-- Informations -->
-        <div class="mobile-nav-section">
-            <h3>Informations</h3>
-            <ul class="mobile-nav-links">
-                <li><a href="index.html#frais">Nos Frais</a></li>
-                <li><a href="index.html#pq_chezBaba">Pourquoi ChezBaba?</a></li>
-                <li><a href="index.html#outils">Nos Outils</a></li>
-                <li><a href="index.html#comment_vendre">Comment Vendre</a></li>
-            </ul>
-        </div>
-    </div>
+                <!-- Categories Section -->
+                <div class="mobile-nav-section">
+                    <h3>Catégories</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="categorie.html">Toutes les catégories</a></li>
+                        <li><a href="produits.html?categorie=telephones">Téléphones</a></li>
+                        <li><a href="produits.html?categorie=ordinateurs">Ordinateurs</a></li>
+                        <li><a href="produits.html?categorie=electronique">Électronique</a></li>
+                        <li><a href="produits.html?categorie=mode">Mode</a></li>
+                    </ul>
+                </div>
 
-    <div class="mobile-overlay-footer">
-        <div class="mobile-auth-buttons">
-            <button class="mobile-auth-btn secondary" id="mobileLoginBtn">Connexion</button>
-            <button class="mobile-auth-btn primary" id="mobileRegisterBtn">Inscription</button>
+                <!-- Informations -->
+                <div class="mobile-nav-section">
+                    <h3>Informations</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html#frais">Nos Frais</a></li>
+                        <li><a href="index.html#pq_chezBaba">Pourquoi ChezBaba?</a></li>
+                        <li><a href="index.html#outils">Nos Outils</a></li>
+                        <li><a href="index.html#comment_vendre">Comment Vendre</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-overlay-footer">
+                <div class="mobile-auth-buttons">
+                    <button class="mobile-auth-btn secondary" id="mobileLoginBtn">Connexion</button>
+                    <button class="mobile-auth-btn primary" id="mobileRegisterBtn">Inscription</button>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
     </main>
 
     <!-- FOOTER -->
@@ -1333,18 +1371,18 @@
     </footer>
 
     <script>
-//         window.addEventListener('load', () => {
-//     setTimeout(() => document.getElementById('pageLoader').classList.add('hidden'), 300);
-// });
-//         function updateCartBadge() {
-//     const cart = JSON.parse(localStorage.getItem('cart')) || [];
-//     const total = cart.reduce((sum, item) => sum + parseInt(item.quantity || 1), 0);
-//     document.querySelectorAll('#cartCount').forEach(b => {
-//         b.textContent = total;
-//         b.style.display = total > 0 ? 'flex' : 'none';
-//     });
-// }
-// window.addEventListener('load', updateCartBadge);
+        //         window.addEventListener('load', () => {
+        //     setTimeout(() => document.getElementById('pageLoader').classList.add('hidden'), 300);
+        // });
+        //         function updateCartBadge() {
+        //     const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        //     const total = cart.reduce((sum, item) => sum + parseInt(item.quantity || 1), 0);
+        //     document.querySelectorAll('#cartCount').forEach(b => {
+        //         b.textContent = total;
+        //         b.style.display = total > 0 ? 'flex' : 'none';
+        //     });
+        // }
+        // window.addEventListener('load', updateCartBadge);
         // ============================================
         // DONNÉES PRODUIT (Simulation base de données)
         // ============================================
@@ -1410,16 +1448,16 @@
             // Titre
             document.getElementById('productTitle').textContent = currentProduct.name;
             document.getElementById('breadcrumbProduct').textContent = currentProduct.name;
-            
+
             // Prix
             updatePrice(currentPrice);
-            
+
             // Stock
             document.getElementById('stockAmount').textContent = currentProduct.stock;
-            
+
             // Compteur panier
             updateCartCount();
-            
+
             // Wishlist
             checkWishlist();
         }
@@ -1431,7 +1469,7 @@
         const mainImage = document.getElementById('mainImage');
 
         thumbnails.forEach(thumb => {
-            thumb.addEventListener('click', function() {
+            thumb.addEventListener('click', function () {
                 thumbnails.forEach(t => t.classList.remove('active'));
                 this.classList.add('active');
                 mainImage.src = this.dataset.image;
@@ -1443,7 +1481,7 @@
         // ============================================
         const colorOptions = document.querySelectorAll('.color-option');
         colorOptions.forEach(option => {
-            option.addEventListener('click', function() {
+            option.addEventListener('click', function () {
                 colorOptions.forEach(opt => opt.classList.remove('active'));
                 this.classList.add('active');
                 selectedColor = this.dataset.color;
@@ -1456,16 +1494,16 @@
         // ============================================
         const storageOptions = document.querySelectorAll('.variant-option');
         storageOptions.forEach(option => {
-            option.addEventListener('click', function() {
+            option.addEventListener('click', function () {
                 storageOptions.forEach(opt => opt.classList.remove('active'));
                 this.classList.add('active');
-                
+
                 const storage = this.dataset.storage;
                 const price = parseInt(this.dataset.price);
-                
+
                 selectedStorage = { size: storage, price: price };
                 currentPrice = price;
-                
+
                 document.getElementById('selectedStorage').textContent = storage;
                 updatePrice(price);
             });
@@ -1517,11 +1555,11 @@
 
             // Récupérer panier existant
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
-            
+
             // Vérifier si produit existe déjà
-            const existingIndex = cart.findIndex(item => 
-                item.id === cartItem.id && 
-                item.color === cartItem.color && 
+            const existingIndex = cart.findIndex(item =>
+                item.id === cartItem.id &&
+                item.color === cartItem.color &&
                 item.storage === cartItem.storage
             );
 
@@ -1535,11 +1573,11 @@
 
             // Sauvegarder
             localStorage.setItem('cart', JSON.stringify(cart));
-            
+
             // Feedback utilisateur
             showToast('✓ Produit ajouté au panier !', 'success');
             updateCartCount();
-            
+
             // Animation bouton
             const btn = document.getElementById('addToCartBtn');
             btn.style.transform = 'scale(0.95)';
@@ -1559,85 +1597,85 @@
                 storage: selectedStorage.size,
                 image: currentProduct.images[0]
             };
-        // ============================================
-        // WISHLIST (Favoris)
-        // ============================================
-        const wishlistBtn = document.getElementById('wishlistBtn');
+            // ============================================
+            // WISHLIST (Favoris)
+            // ============================================
+            const wishlistBtn = document.getElementById('wishlistBtn');
 
-        function checkWishlist() {
-            const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
-            if (wishlist.includes(currentProduct.id)) {
-                wishlistBtn.classList.add('active');
-                wishlistBtn.querySelector('i').classList.replace('bi-heart', 'bi-heart-fill');
+            function checkWishlist() {
+                const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+                if (wishlist.includes(currentProduct.id)) {
+                    wishlistBtn.classList.add('active');
+                    wishlistBtn.querySelector('i').classList.replace('bi-heart', 'bi-heart-fill');
+                }
             }
-        }
 
-        wishlistBtn.addEventListener('click', () => {
-            let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
-            
-            if (wishlist.includes(currentProduct.id)) {
-                // Retirer
-                wishlist = wishlist.filter(id => id !== currentProduct.id);
-                wishlistBtn.classList.remove('active');
-                wishlistBtn.querySelector('i').classList.replace('bi-heart-fill', 'bi-heart');
-                showToast('Retiré des favoris', 'success');
-            } else {
-                // Ajouter
-                wishlist.push(currentProduct.id);
-                wishlistBtn.classList.add('active');
-                wishlistBtn.querySelector('i').classList.replace('bi-heart', 'bi-heart-fill');
-                showToast('❤ Ajouté aux favoris !', 'success');
-            }
-            
-            localStorage.setItem('wishlist', JSON.stringify(wishlist));
-        });
+            wishlistBtn.addEventListener('click', () => {
+                let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
 
-        // ============================================
-        // ONGLETS
-        // ============================================
-        const tabBtns = document.querySelectorAll('.tab-btn');
-        const tabContents = document.querySelectorAll('.tab-content');
+                if (wishlist.includes(currentProduct.id)) {
+                    // Retirer
+                    wishlist = wishlist.filter(id => id !== currentProduct.id);
+                    wishlistBtn.classList.remove('active');
+                    wishlistBtn.querySelector('i').classList.replace('bi-heart-fill', 'bi-heart');
+                    showToast('Retiré des favoris', 'success');
+                } else {
+                    // Ajouter
+                    wishlist.push(currentProduct.id);
+                    wishlistBtn.classList.add('active');
+                    wishlistBtn.querySelector('i').classList.replace('bi-heart', 'bi-heart-fill');
+                    showToast('❤ Ajouté aux favoris !', 'success');
+                }
 
-        tabBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Retirer active
-                tabBtns.forEach(b => b.classList.remove('active'));
-                tabContents.forEach(c => c.classList.remove('active'));
-                
-                // Ajouter active
-                btn.classList.add('active');
-                const tabId = btn.dataset.tab;
-                document.getElementById(tabId).classList.add('active');
-                
-                // Scroll vers onglets
-                document.querySelector('.tabs-section').scrollIntoView({ 
-                    behavior: 'smooth', 
-                    block: 'start' 
+                localStorage.setItem('wishlist', JSON.stringify(wishlist));
+            });
+
+            // ============================================
+            // ONGLETS
+            // ============================================
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Retirer active
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+
+                    // Ajouter active
+                    btn.classList.add('active');
+                    const tabId = btn.dataset.tab;
+                    document.getElementById(tabId).classList.add('active');
+
+                    // Scroll vers onglets
+                    document.querySelector('.tabs-section').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 });
             });
-        });
 
-        // ============================================
-        // COMPTEUR PANIER (Header)
-        // ============================================
-        function updateCartCount() {
-            const cart = JSON.parse(localStorage.getItem('cart')) || [];
-            const totalItems = cart.reduce((sum, item) => sum + parseInt(item.quantity), 0);
-            document.getElementById('cartCount').textContent = totalItems;
-        }
+            // ============================================
+            // COMPTEUR PANIER (Header)
+            // ============================================
+            function updateCartCount() {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const totalItems = cart.reduce((sum, item) => sum + parseInt(item.quantity), 0);
+                document.getElementById('cartCount').textContent = totalItems;
+            }
 
-        // ============================================
-        // TOAST NOTIFICATION
-        // ============================================
-        function showToast(message, type = 'success') {
-            // Supprimer toast existant
-            const existingToast = document.querySelector('.toast');
-            if (existingToast) existingToast.remove();
+            // ============================================
+            // TOAST NOTIFICATION
+            // ============================================
+            function showToast(message, type = 'success') {
+                // Supprimer toast existant
+                const existingToast = document.querySelector('.toast');
+                if (existingToast) existingToast.remove();
 
-            // Créer nouveau toast
-            const toast = document.createElement('div');
-            toast.className = `toast ${type}`;
-            toast.innerHTML = `
+                // Créer nouveau toast
+                const toast = document.createElement('div');
+                toast.className = `toast ${type}`;
+                toast.innerHTML = `
                 <i class="bi bi-check-circle toast-icon"></i>
                 <div>
                     <strong>${type === 'success' ? 'Succès' : 'Attention'}</strong>
@@ -1646,27 +1684,28 @@
                 <button class="toast-close">&times;</button>
             `;
 
-            document.body.appendChild(toast);
+                document.body.appendChild(toast);
 
-            // Fermer au clic
-            toast.querySelector('.toast-close').addEventListener('click', () => {
-                toast.remove();
+                // Fermer au clic
+                toast.querySelector('.toast-close').addEventListener('click', () => {
+                    toast.remove();
+                });
+
+                // Auto-fermeture après 3s
+                setTimeout(() => {
+                    if (toast.parentElement) toast.remove();
+                }, 3000);
+            }
+
+            // ============================================
+            // INITIALISATION
+            // ============================================
+            window.addEventListener('load', () => {
+                initPage();
+                console.log('✅ Page détail produit chargée - Produit ID:', productId);
+                console.log('📦 Produit:', currentProduct);
             });
-
-            // Auto-fermeture après 3s
-            setTimeout(() => {
-                if (toast.parentElement) toast.remove();
-            }, 3000);
-        }
-
-        // ============================================
-        // INITIALISATION
-        // ============================================
-        window.addEventListener('load', () => {
-            initPage();
-            console.log('✅ Page détail produit chargée - Produit ID:', productId);
-            console.log('📦 Produit:', currentProduct);
-        });
     </script>
 </body>
+
 </html>

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espace Vendeur - ChezBaba</title>
     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
         :root {
@@ -18,7 +20,7 @@
             --slategray: #404E4D;
             --green: #758e4f;
             --white: #ffffff;
-            --orange: #EA9010; 
+            --orange: #EA9010;
             --pink: #FD6C9E;
             --teal: #17a2b8;
             --alibaba-orange: #ff6900;
@@ -79,7 +81,7 @@
         .profile-sidebar {
             background: var(--white);
             border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             padding: 30px;
             height: fit-content;
             position: sticky;
@@ -104,7 +106,7 @@
             font-size: 2.5em;
             font-weight: bold;
             border: 5px solid var(--white);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             position: relative;
         }
 
@@ -232,7 +234,7 @@
         .profile-content {
             background: var(--white);
             border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             padding: 40px;
         }
 
@@ -246,8 +248,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .section-header {
@@ -329,7 +338,7 @@
 
         .dashboard-card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         }
 
         .dashboard-card:nth-child(2) {
@@ -378,7 +387,7 @@
 
         .product-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
 
         .product-status {
@@ -537,7 +546,9 @@
             color: var(--darkgray1);
         }
 
-        .form-input, .form-select, .form-textarea {
+        .form-input,
+        .form-select,
+        .form-textarea {
             width: 100%;
             padding: 12px 15px;
             border: 2px solid var(--lightgray1);
@@ -553,7 +564,9 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        .form-input:focus, .form-select:focus, .form-textarea:focus {
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
             outline: none;
             border-color: var(--blue);
             box-shadow: 0 0 0 3px rgba(49, 140, 231, 0.1);
@@ -752,11 +765,11 @@
             border-radius: 50%;
         }
 
-        input:checked + .slider {
+        input:checked+.slider {
             background-color: var(--blue);
         }
 
-        input:checked + .slider:before {
+        input:checked+.slider:before {
             transform: translateX(26px);
         }
 
@@ -839,16 +852,19 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Loader -->
-    <div id="pageLoader"><div class="spinner"></div></div>
+    <div id="pageLoader">
+        <div class="spinner"></div>
+    </div>
     <!-- NAVIGATION -->
     <nav>
         <div class="navBar">
             <div class="navBar_connexion_inscription">
                 <p class="navBar_connexion_inscrption_text">
                     Bonjour!
-                    <a href="#" class="connexion_link" id="loginBtn">Connecter vous</a> ou 
+                    <a href="#" class="connexion_link" id="loginBtn">Connecter vous</a> ou
                     <a href="#" class="inscription_link" id="registerBtn">Inscrivez-vous</a>
                     <a href="#" class="aide_link">Aide</a>
                 </p>
@@ -860,7 +876,10 @@
                     </a>
                 </div>
                 <div class="mobile-icone">
-                    <a href="favoris.html" class="icone"><i class="bi bi-heart"></i></a><a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge" id="cartCount">0</span></a>                    <a href="profil.html" class="icone"><i class="bi bi-person"></i></a>
+                    <a href="favoris.html" class="icone"><i class="bi bi-heart"></i></a><a href="panier.html"
+                        class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge"
+                            id="cartCount">0</span></a> <a href="profil.html" class="icone"><i
+                            class="bi bi-person"></i></a>
                 </div>
             </div>
             <div class="logo_searchBar_button">
@@ -881,7 +900,10 @@
                 </div>
                 <div class="button_icons">
                     <button class="button_vendre" id="vendreBtn">Vendre</button>
-                    <a href="#" class="icone"><i class="bi bi-heart"></i></a><a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge" id="cartCount">0</span></a>                    <a href="profil.html" class="icone"><i class="bi bi-person"></i></a>
+                    <a href="#" class="icone"><i class="bi bi-heart"></i></a><a href="panier.html" class="icone"
+                        style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge"
+                            id="cartCount">0</span></a> <a href="profil.html" class="icone"><i
+                            class="bi bi-person"></i></a>
                 </div>
             </div>
             <div class="categorie_navigation">
@@ -1084,7 +1106,8 @@
                                 <i class="bi bi-funnel"></i>
                                 Filtrer
                             </button>
-                            <button class="btn btn-primary" onclick="document.querySelector('[data-section=ajouter]').click()">
+                            <button class="btn btn-primary"
+                                onclick="document.querySelector('[data-section=ajouter]').click()">
                                 <i class="bi bi-plus-lg"></i>
                                 Nouveau produit
                             </button>
@@ -1170,7 +1193,8 @@
                         <!-- Produit 4 -->
                         <div class="product-card">
                             <span class="product-status status-pending">En révision</span>
-                            <img src="https://via.placeholder.com/200x150/4A9EF2/FFFFFF?text=MacBook" alt="MacBook" class="product-image">
+                            <img src="https://via.placeholder.com/200x150/4A9EF2/FFFFFF?text=MacBook" alt="MacBook"
+                                class="product-image">
                             <div class="product-info">
                                 <div class="product-name">MacBook Pro M3 14"</div>
                                 <div class="product-price">1,200,000 FCFA</div>
@@ -1204,7 +1228,8 @@
                         <div class="info-grid">
                             <div class="form-group">
                                 <label class="form-label">Nom du produit *</label>
-                                <input type="text" class="form-input" placeholder="Ex: iPhone 17 Pro Max 256Go" required>
+                                <input type="text" class="form-input" placeholder="Ex: iPhone 17 Pro Max 256Go"
+                                    required>
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Catégorie *</label>
@@ -1245,7 +1270,8 @@
 
                         <div class="form-group full-width">
                             <label class="form-label">Description *</label>
-                            <textarea class="form-textarea" placeholder="Décrivez votre produit en détail..." required></textarea>
+                            <textarea class="form-textarea" placeholder="Décrivez votre produit en détail..."
+                                required></textarea>
                         </div>
 
                         <div class="form-group full-width">
@@ -1382,7 +1408,8 @@
                         </div>
                     </div>
 
-                    <h3 style="margin: 30px 0 20px; font-size: 1.3em; color: var(--darkgray1);">Historique des paiements</h3>
+                    <h3 style="margin: 30px 0 20px; font-size: 1.3em; color: var(--darkgray1);">Historique des paiements
+                    </h3>
                     <table class="sales-table">
                         <thead>
                             <tr>
@@ -1508,7 +1535,8 @@
                         </div>
                         <div class="form-group">
                             <label class="form-label">Description de la boutique</label>
-                            <textarea class="form-textarea" placeholder="Décrivez votre boutique...">Spécialiste en produits électroniques neufs et d'occasion. Livraison rapide partout au Bénin.</textarea>
+                            <textarea class="form-textarea"
+                                placeholder="Décrivez votre boutique...">Spécialiste en produits électroniques neufs et d'occasion. Livraison rapide partout au Bénin.</textarea>
                         </div>
                         <button class="btn btn-primary">
                             <i class="bi bi-check"></i>
@@ -1564,56 +1592,56 @@
             </div>
         </div>
         <!-- MOBILE OVERLAY MENU CORRIGÉ -->
-<div class="mobile-overlay" id="mobileOverlay">
-    <div class="mobile-overlay-header">
-        <h2><i class="bi bi-grid-3x3-gap"></i> Menu</h2>
-        <button class="mobile-close-btn" id="mobileCloseBtn">&times;</button>
-    </div>
-    
-    <div class="mobile-overlay-content">
-        <!-- Navigation Links -->
-        <div class="mobile-nav-section">
-            <h3>Navigation</h3>
-            <ul class="mobile-nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="profil.html">Mon Profil</a></li>
-                <li><a href="favoris.html">Mes Favoris</a></li>
-                <li><a href="panier.html">Mon Panier</a></li>
-                <li><a href="vendeur.html">Espace Vendeur</a></li>
-            </ul>
-        </div>
+        <div class="mobile-overlay" id="mobileOverlay">
+            <div class="mobile-overlay-header">
+                <h2><i class="bi bi-grid-3x3-gap"></i> Menu</h2>
+                <button class="mobile-close-btn" id="mobileCloseBtn">&times;</button>
+            </div>
 
-        <!-- Categories Section -->
-        <div class="mobile-nav-section">
-            <h3>Catégories</h3>
-            <ul class="mobile-nav-links">
-                <li><a href="categorie.html">Toutes les catégories</a></li>
-                <li><a href="produits.html?categorie=telephones">Téléphones</a></li>
-                <li><a href="produits.html?categorie=ordinateurs">Ordinateurs</a></li>
-                <li><a href="produits.html?categorie=electronique">Électronique</a></li>
-                <li><a href="produits.html?categorie=mode">Mode</a></li>
-            </ul>
-        </div>
+            <div class="mobile-overlay-content">
+                <!-- Navigation Links -->
+                <div class="mobile-nav-section">
+                    <h3>Navigation</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="profil.html">Mon Profil</a></li>
+                        <li><a href="favoris.html">Mes Favoris</a></li>
+                        <li><a href="panier.html">Mon Panier</a></li>
+                        <li><a href="vendeur.html">Espace Vendeur</a></li>
+                    </ul>
+                </div>
 
-        <!-- Informations -->
-        <div class="mobile-nav-section">
-            <h3>Informations</h3>
-            <ul class="mobile-nav-links">
-                <li><a href="index.html#frais">Nos Frais</a></li>
-                <li><a href="index.html#pq_chezBaba">Pourquoi ChezBaba?</a></li>
-                <li><a href="index.html#outils">Nos Outils</a></li>
-                <li><a href="index.html#comment_vendre">Comment Vendre</a></li>
-            </ul>
-        </div>
-    </div>
+                <!-- Categories Section -->
+                <div class="mobile-nav-section">
+                    <h3>Catégories</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="categorie.html">Toutes les catégories</a></li>
+                        <li><a href="produits.html?categorie=telephones">Téléphones</a></li>
+                        <li><a href="produits.html?categorie=ordinateurs">Ordinateurs</a></li>
+                        <li><a href="produits.html?categorie=electronique">Électronique</a></li>
+                        <li><a href="produits.html?categorie=mode">Mode</a></li>
+                    </ul>
+                </div>
 
-    <div class="mobile-overlay-footer">
-        <div class="mobile-auth-buttons">
-            <button class="mobile-auth-btn secondary" id="mobileLoginBtn">Connexion</button>
-            <button class="mobile-auth-btn primary" id="mobileRegisterBtn">Inscription</button>
+                <!-- Informations -->
+                <div class="mobile-nav-section">
+                    <h3>Informations</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html#frais">Nos Frais</a></li>
+                        <li><a href="index.html#pq_chezBaba">Pourquoi ChezBaba?</a></li>
+                        <li><a href="index.html#outils">Nos Outils</a></li>
+                        <li><a href="index.html#comment_vendre">Comment Vendre</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-overlay-footer">
+                <div class="mobile-auth-buttons">
+                    <button class="mobile-auth-btn secondary" id="mobileLoginBtn">Connexion</button>
+                    <button class="mobile-auth-btn primary" id="mobileRegisterBtn">Inscription</button>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
     </main>
 
     <!-- FOOTER -->
@@ -1622,7 +1650,7 @@
             <div class="footer-section footer-logo-section">
                 <h2>Chez<span class="baba">Baba</span></h2>
                 <p class="footer-description">
-                    La marketplace de référence pour vendre et acheter en toute sécurité. 
+                    La marketplace de référence pour vendre et acheter en toute sécurité.
                     Rejoignez des millions d'utilisateurs qui nous font confiance.
                 </p>
                 <div class="footer-social">
@@ -1695,17 +1723,17 @@
 
     <script>
         window.addEventListener('load', () => {
-    setTimeout(() => document.getElementById('pageLoader').classList.add('hidden'), 300);
-});
+            setTimeout(() => document.getElementById('pageLoader').classList.add('hidden'), 300);
+        });
         function updateCartBadge() {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const total = cart.reduce((sum, item) => sum + parseInt(item.quantity || 1), 0);
-    document.querySelectorAll('#cartCount').forEach(b => {
-        b.textContent = total;
-        b.style.display = total > 0 ? 'flex' : 'none';
-    });
-}
-window.addEventListener('load', updateCartBadge);
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const total = cart.reduce((sum, item) => sum + parseInt(item.quantity || 1), 0);
+            document.querySelectorAll('#cartCount').forEach(b => {
+                b.textContent = total;
+                b.style.display = total > 0 ? 'flex' : 'none';
+            });
+        }
+        window.addEventListener('load', updateCartBadge);
         // ============================================
         // GESTION DU PROFIL VENDEUR
         // ============================================
@@ -1715,14 +1743,14 @@ window.addEventListener('load', updateCartBadge);
         const contentSections = document.querySelectorAll('.content-section');
 
         menuLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
+            link.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 // Retirer active de tous les liens
                 menuLinks.forEach(l => l.classList.remove('active'));
                 // Ajouter active au lien cliqué
                 this.classList.add('active');
-                
+
                 // Cacher toutes les sections
                 contentSections.forEach(section => section.classList.remove('active'));
                 // Afficher la section correspondante
@@ -1734,7 +1762,7 @@ window.addEventListener('load', updateCartBadge);
         // Gestion du formulaire d'ajout de produit
         const addProductForm = document.getElementById('addProductForm');
         if (addProductForm) {
-            addProductForm.addEventListener('submit', function(e) {
+            addProductForm.addEventListener('submit', function (e) {
                 e.preventDefault();
                 alert('Produit ajouté avec succès ! Il sera en ligne après validation.');
                 this.reset();
@@ -1743,7 +1771,7 @@ window.addEventListener('load', updateCartBadge);
 
         // Gestion des boutons d'action des produits
         document.querySelectorAll('.product-action-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
+            btn.addEventListener('click', function () {
                 const icon = this.querySelector('i');
                 if (icon.classList.contains('bi-pencil')) {
                     alert('Modification du produit');
@@ -1761,23 +1789,23 @@ window.addEventListener('load', updateCartBadge);
         // Gestion de la zone de téléchargement de fichiers
         const fileUploadArea = document.querySelector('.file-upload-area');
         if (fileUploadArea) {
-            fileUploadArea.addEventListener('click', function() {
+            fileUploadArea.addEventListener('click', function () {
                 alert('Ouverture du sélecteur de fichiers...');
             });
 
-            fileUploadArea.addEventListener('dragover', function(e) {
+            fileUploadArea.addEventListener('dragover', function (e) {
                 e.preventDefault();
                 this.style.borderColor = 'var(--blue)';
                 this.style.background = 'rgba(49, 140, 231, 0.1)';
             });
 
-            fileUploadArea.addEventListener('dragleave', function(e) {
+            fileUploadArea.addEventListener('dragleave', function (e) {
                 e.preventDefault();
                 this.style.borderColor = 'var(--lightgray1)';
                 this.style.background = 'var(--lightgray)';
             });
 
-            fileUploadArea.addEventListener('drop', function(e) {
+            fileUploadArea.addEventListener('drop', function (e) {
                 e.preventDefault();
                 this.style.borderColor = 'var(--lightgray1)';
                 this.style.background = 'var(--lightgray)';
@@ -1787,7 +1815,7 @@ window.addEventListener('load', updateCartBadge);
 
         // Gestion des messages
         document.querySelectorAll('.message-card').forEach(card => {
-            card.addEventListener('click', function() {
+            card.addEventListener('click', function () {
                 this.classList.remove('unread');
                 alert('Ouverture de la conversation...');
             });
@@ -1796,7 +1824,7 @@ window.addEventListener('load', updateCartBadge);
         // Marquer tous les messages comme lus
         const markAllReadBtn = document.querySelector('.section-actions .btn-secondary');
         if (markAllReadBtn && markAllReadBtn.textContent.includes('Tout marquer comme lu')) {
-            markAllReadBtn.addEventListener('click', function() {
+            markAllReadBtn.addEventListener('click', function () {
                 document.querySelectorAll('.message-card.unread').forEach(card => {
                     card.classList.remove('unread');
                 });
@@ -1805,9 +1833,9 @@ window.addEventListener('load', updateCartBadge);
         }
 
         // Initialisation
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             console.log('✅ Page profil vendeur chargée');
-            
+
             // Mettre à jour l'avatar avec les initiales
             const userName = document.getElementById('userName').textContent;
             const initials = userName.split(' ').map(word => word[0]).join('').toUpperCase();
@@ -1833,4 +1861,5 @@ window.addEventListener('load', updateCartBadge);
         });
     </script>
 </body>
+
 </html>

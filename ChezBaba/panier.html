@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Panier - ChezBaba</title>
     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
         :root {
@@ -47,7 +49,7 @@
         /* PAGE HEADER */
         .page-header {
             margin-bottom: 40px;
-            color:var(--darkblue);
+            color: var(--darkblue);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -76,7 +78,7 @@
         .cart-items {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
             padding: 30px;
         }
 
@@ -229,7 +231,7 @@
         .cart-summary {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
             padding: 30px;
             height: fit-content;
             position: sticky;
@@ -396,7 +398,7 @@
         .empty-cart {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
             padding: 80px 40px;
             text-align: center;
         }
@@ -442,14 +444,14 @@
             background: white;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             transition: all 0.3s;
             cursor: pointer;
         }
 
         .product-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
         }
 
         .product-image {
@@ -484,7 +486,7 @@
             background: white;
             padding: 20px 25px;
             border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
             display: none;
             align-items: center;
             gap: 15px;
@@ -509,6 +511,7 @@
                 transform: translateX(500px);
                 opacity: 0;
             }
+
             to {
                 transform: translateX(0);
                 opacity: 1;
@@ -581,16 +584,19 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Loader -->
-    <div id="pageLoader"><div class="spinner"></div></div>
+    <div id="pageLoader">
+        <div class="spinner"></div>
+    </div>
     <!-- NAVIGATION -->
-     <nav>
+    <nav>
         <div class="navBar">
             <div class="navBar_connexion_inscription">
-                <p class="navBar_connexion_inscrption_text" >
+                <p class="navBar_connexion_inscrption_text">
                     Bonjour!
-                    <a href="#" class="connexion_link" id="loginBtn">Connecter vous</a> ou 
+                    <a href="#" class="connexion_link" id="loginBtn">Connecter vous</a> ou
                     <a href="#" class="inscription_link" id="registerBtn">Inscrivez-vous</a>
                     <a href="#" class="aide_link">Aide</a>
                 </p>
@@ -599,19 +605,20 @@
                 <div class="nav-mobile-logo">
                     <a href="index.html" class="mobile-logo" aria-label="Accueil ChezBaba">
                         <img src="img/logo-removebg-preview.png" alt="ChezBaba Logo" class="mobile-logo-image">
-                     </a>
+                    </a>
                 </div>
                 <div class="mobile-icone">
                     <a href="favoris.html" class="icone"><i class="bi bi-heart"></i></a>
-                    <a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge" id="cartCount">0</span></a>               
+                    <a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span
+                            class="cart-badge" id="cartCount">0</span></a>
                     <a href="profil.html" class="icone"><i class="bi bi-person"></i></a>
                 </div>
             </div>
             <div class="logo_searchBar_button">
                 <div class="nav_logo">
-                        <a href="index.html" class="logo_link" aria-label="Accueil ChezBaba">
-                            <img src="img/logo-removebg-preview.png" alt="ChezBaba Logo" class="logo-image">
-                        </a>
+                    <a href="index.html" class="logo_link" aria-label="Accueil ChezBaba">
+                        <img src="img/logo-removebg-preview.png" alt="ChezBaba Logo" class="logo-image">
+                    </a>
                 </div>
                 <div class="search_input_button">
                     <input type="text" name="q" class="search_input" placeholder="Rechercher un produit">
@@ -626,7 +633,8 @@
                 <div class="button_icons">
                     <button class="button_vendre" id="vendreBtn">Vendre</button>
                     <!-- <a href="favoris.html" class="icone"><i class="bi bi-heart"></i></a> -->
-                    <a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span class="cart-badge" id="cartCount">0</span></a>                    
+                    <a href="panier.html" class="icone" style="position: relative;"><i class="bi bi-cart3"></i><span
+                            class="cart-badge" id="cartCount">0</span></a>
                     <a href="profil.html" class="icone"><i class="bi bi-person"></i></a>
                 </div>
             </div>
@@ -708,56 +716,56 @@
             </div>
         </div>
         <!-- MOBILE OVERLAY MENU CORRIGÉ -->
-<div class="mobile-overlay" id="mobileOverlay">
-    <div class="mobile-overlay-header">
-        <h2><i class="bi bi-grid-3x3-gap"></i> Menu</h2>
-        <button class="mobile-close-btn" id="mobileCloseBtn">&times;</button>
-    </div>
-    
-    <div class="mobile-overlay-content">
-        <!-- Navigation Links -->
-        <div class="mobile-nav-section">
-            <h3>Navigation</h3>
-            <ul class="mobile-nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="profil.html">Mon Profil</a></li>
-                <li><a href="favoris.html">Mes Favoris</a></li>
-                <li><a href="panier.html">Mon Panier</a></li>
-                <li><a href="vendeur.html">Espace Vendeur</a></li>
-            </ul>
-        </div>
+        <div class="mobile-overlay" id="mobileOverlay">
+            <div class="mobile-overlay-header">
+                <h2><i class="bi bi-grid-3x3-gap"></i> Menu</h2>
+                <button class="mobile-close-btn" id="mobileCloseBtn">&times;</button>
+            </div>
 
-        <!-- Categories Section -->
-        <div class="mobile-nav-section">
-            <h3>Catégories</h3>
-            <ul class="mobile-nav-links">
-                <li><a href="categorie.html">Toutes les catégories</a></li>
-                <li><a href="produits.html?categorie=telephones">Téléphones</a></li>
-                <li><a href="produits.html?categorie=ordinateurs">Ordinateurs</a></li>
-                <li><a href="produits.html?categorie=electronique">Électronique</a></li>
-                <li><a href="produits.html?categorie=mode">Mode</a></li>
-            </ul>
-        </div>
+            <div class="mobile-overlay-content">
+                <!-- Navigation Links -->
+                <div class="mobile-nav-section">
+                    <h3>Navigation</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="profil.html">Mon Profil</a></li>
+                        <li><a href="favoris.html">Mes Favoris</a></li>
+                        <li><a href="panier.html">Mon Panier</a></li>
+                        <li><a href="vendeur.html">Espace Vendeur</a></li>
+                    </ul>
+                </div>
 
-        <!-- Informations -->
-        <div class="mobile-nav-section">
-            <h3>Informations</h3>
-            <ul class="mobile-nav-links">
-                <li><a href="index.html#frais">Nos Frais</a></li>
-                <li><a href="index.html#pq_chezBaba">Pourquoi ChezBaba?</a></li>
-                <li><a href="index.html#outils">Nos Outils</a></li>
-                <li><a href="index.html#comment_vendre">Comment Vendre</a></li>
-            </ul>
-        </div>
-    </div>
+                <!-- Categories Section -->
+                <div class="mobile-nav-section">
+                    <h3>Catégories</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="categorie.html">Toutes les catégories</a></li>
+                        <li><a href="produits.html?categorie=telephones">Téléphones</a></li>
+                        <li><a href="produits.html?categorie=ordinateurs">Ordinateurs</a></li>
+                        <li><a href="produits.html?categorie=electronique">Électronique</a></li>
+                        <li><a href="produits.html?categorie=mode">Mode</a></li>
+                    </ul>
+                </div>
 
-    <div class="mobile-overlay-footer">
-        <div class="mobile-auth-buttons">
-            <button class="mobile-auth-btn secondary" id="mobileLoginBtn">Connexion</button>
-            <button class="mobile-auth-btn primary" id="mobileRegisterBtn">Inscription</button>
+                <!-- Informations -->
+                <div class="mobile-nav-section">
+                    <h3>Informations</h3>
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html#frais">Nos Frais</a></li>
+                        <li><a href="index.html#pq_chezBaba">Pourquoi ChezBaba?</a></li>
+                        <li><a href="index.html#outils">Nos Outils</a></li>
+                        <li><a href="index.html#comment_vendre">Comment Vendre</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-overlay-footer">
+                <div class="mobile-auth-buttons">
+                    <button class="mobile-auth-btn secondary" id="mobileLoginBtn">Connexion</button>
+                    <button class="mobile-auth-btn primary" id="mobileRegisterBtn">Inscription</button>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
     </main>
 
     <!-- FOOTER -->
@@ -765,9 +773,9 @@
         <div class="footer-container">
             <div class="footer-section footer-logo-section">
                 <div class="nav_logo">
-                        <a href="index.html" class="logo_link" aria-label="Accueil ChezBaba">
-                            <img src="img/logo-removebg-preview.png" alt="ChezBaba Logo" class="logo-image">
-                        </a>
+                    <a href="index.html" class="logo_link" aria-label="Accueil ChezBaba">
+                        <img src="img/logo-removebg-preview.png" alt="ChezBaba Logo" class="logo-image">
+                    </a>
                 </div>
                 <p class="footer-description">
                     La marketplace de référence pour vendre et acheter en toute sécurité.
@@ -814,22 +822,23 @@
     <div class="toast" id="toast">
         <i class="bi bi-check-circle" style="font-size: 1.5em; color: var(--success);"></i>
         <div id="toastMessage"></div>
-        <button onclick="document.getElementById('toast').classList.remove('show')" style="background: none; border: none; font-size: 1.2em; cursor: pointer; color: #999; margin-left: auto;">&times;</button>
+        <button onclick="document.getElementById('toast').classList.remove('show')"
+            style="background: none; border: none; font-size: 1.2em; cursor: pointer; color: #999; margin-left: auto;">&times;</button>
     </div>
 
     <script>
         window.addEventListener('load', () => {
-    setTimeout(() => document.getElementById('pageLoader').classList.add('hidden'), 300);
-});
+            setTimeout(() => document.getElementById('pageLoader').classList.add('hidden'), 300);
+        });
         function updateCartBadge() {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const total = cart.reduce((sum, item) => sum + parseInt(item.quantity || 1), 0);
-    document.querySelectorAll('#cartCount').forEach(b => {
-        b.textContent = total;
-        b.style.display = total > 0 ? 'flex' : 'none';
-    });
-}
-window.addEventListener('load', updateCartBadge);
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const total = cart.reduce((sum, item) => sum + parseInt(item.quantity || 1), 0);
+            document.querySelectorAll('#cartCount').forEach(b => {
+                b.textContent = total;
+                b.style.display = total > 0 ? 'flex' : 'none';
+            });
+        }
+        window.addEventListener('load', updateCartBadge);
         // ============================================
         // GESTION DU PANIER
         // ============================================
@@ -1008,15 +1017,15 @@ window.addEventListener('load', updateCartBadge);
             showToast('Quantité mise à jour', 'success');
         }
 
-       function removeItem(index) {
-    const name = cart[index].name;
-    if (confirm(`Supprimer "${name}" du panier ?`)) {
-        cart.splice(index, 1);
-        saveCart();
-        renderCart();
-        showToast(`${name} supprimĂ©`, 'success');
-    }
-}
+        function removeItem(index) {
+            const name = cart[index].name;
+            if (confirm(`Supprimer "${name}" du panier ?`)) {
+                cart.splice(index, 1);
+                saveCart();
+                renderCart();
+                showToast(`${name} supprimĂ©`, 'success');
+            }
+        }
 
         // Appliquer code promo
         function applyPromo() {
@@ -1071,7 +1080,7 @@ window.addEventListener('load', updateCartBadge);
         function showToast(message, type = 'success') {
             const toast = document.getElementById('toast');
             const toastMessage = document.getElementById('toastMessage');
-            
+
             toast.className = `toast ${type} show`;
             toastMessage.textContent = message;
 
@@ -1105,4 +1114,5 @@ window.addEventListener('load', updateCartBadge);
         });
     </script>
 </body>
+
 </html>
